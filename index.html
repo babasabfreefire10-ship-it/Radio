@@ -21,112 +21,130 @@
 }
 </style><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#000000"><title>RADIO BY SABI</title>
+<meta name="theme-color" content="#000000"><title>RADIO BY SABI • VIP PREMIUM</title>
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{touch-action:manipulation}
-body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;padding-bottom:140px}
-header{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a1a}
-.logo{display:flex;gap:10px;align-items:center}.badge{width:46px;height:46px;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:25px;font-weight:900}.badge i{color:#c00000;font-size:12px}
-.lt .a{font-size:22px;font-weight:900}.lt .a em{font-style:normal;color:#c00000}.lt .b{font-size:9px;letter-spacing:3px;color:#888;font-weight:800}
-button{cursor:pointer;background:#111;color:#fff;border:1px solid #333;padding:12px 16px;font-weight:800;border-radius:999px;font-size:14px}
-button:active{transform:scale(.96)}button.red{background:#c00000;border-color:#c00000}button.white{background:#fff;color:#000;border-color:#fff}
-button.active{background:#fff;color:#000}
-.unlock{background:#c00000;border-color:#c00000;width:100%;padding:18px;font-size:18px;border-radius:14px;margin:14px 16px 0}
+body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;padding-bottom:150px}
+:root{--blue:#2b7fff;--blue2:#00c2ff;--gold:#d4af37;--gold2:#f5d76e}
+.goldline{height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.blueline{height:1px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
+header{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(180deg,#050a14,#000);border-bottom:1px solid #1a2a4a}
+/* LOGO E RE - VIP */
+.logo{display:flex;gap:12px;align-items:center}
+.logo-badge{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#0a1a3a,#000);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 18px rgba(43,127,255,.6),0 0 8px rgba(212,175,55,.5);flex:0 0 58px}
+.logo-badge .crown{position:absolute;top:-10px;font-size:16px}
+.logo-badge b{font-size:28px;color:#fff}.logo-badge b em{font-style:normal;color:var(--gold)}
+.logo-badge i{position:absolute;bottom:6px;right:8px;width:8px;height:8px;background:var(--blue2);border-radius:50%;box-shadow:0 0 8px var(--blue2)}
+.lt .a{font-size:22px;font-weight:900;letter-spacing:1px}.lt .a em{font-style:normal;color:var(--gold)}
+.lt .b{font-size:9px;letter-spacing:3px;color:#7aa2ff;font-weight:800;margin-top:3px}
+.vip-badge{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#000;font-size:10px;font-weight:900;padding:6px 10px;border-radius:999px;letter-spacing:1px;box-shadow:0 0 14px rgba(212,175,55,.6)}
+button{cursor:pointer;background:#0a0f1e;color:#fff;border:1px solid #1e3a6e;padding:11px 15px;font-weight:800;border-radius:999px;font-size:13px}
+button:active{transform:scale(.96)}button.active{background:var(--blue);border-color:var(--blue)}button.gold{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#000;border-color:var(--gold)}
+button.blue{background:linear-gradient(90deg,var(--blue),var(--blue2));color:#fff;border-color:var(--blue)}
+.unlock{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#000;width:calc(100% - 32px);margin:14px 16px 0;padding:18px;font-size:18px;border-radius:14px;border:none;box-shadow:0 0 20px rgba(212,175,55,.4)}
 .wrap{max-width:960px;margin:0 auto;padding:0 16px}
-.player{padding:18px 0 6px}h1{font-size:clamp(44px,13vw,88px);line-height:.88;margin:8px 0;text-transform:uppercase}h1 span{color:#c00000}
-.sub{color:#c00000;font-weight:900;letter-spacing:2px}.meta{color:#999;font-size:13px;margin-top:6px}
-audio{width:100%;margin-top:16px;background:#111;border-radius:12px}
-audio::-webkit-media-controls-panel{background:#111}
+.vip-banner{margin-top:14px;background:linear-gradient(135deg,#050a14,#0a1a3a,#050505);border:1px solid var(--gold);border-radius:18px;padding:18px;position:relative;overflow:hidden}
+.vip-banner .glow{position:absolute;right:-20px;top:-30px;font-size:120px;opacity:.12}
+.vip-banner h2{margin:0;font-size:24px}.vip-banner h2 span{color:var(--gold)}.vip-banner p{color:#aab8ff;font-size:13px;margin:8px 0 0;line-height:1.5}
+.player{padding:18px 0 6px}h1{font-size:clamp(44px,13vw,88px);line-height:.88;margin:8px 0;text-transform:uppercase}h1 span{color:var(--blue2)}
+.sub{color:var(--gold);font-weight:900;letter-spacing:2px}.meta{color:#999;font-size:13px;margin-top:6px}
+audio{width:100%;margin-top:14px;background:#0a0f1e;border-radius:12px;border:1px solid #1e3a6e}
 .tabs{display:flex;gap:8px;overflow-x:auto;padding:10px 0;scrollbar-width:none}.tabs button{flex:0 0 auto}
-.controls{display:flex;justify-content:center;gap:18px;margin-top:14px}.ctrl{width:52px;height:52px;border-radius:50%;font-size:20px}.play-big{width:80px;height:80px;border-radius:50%;background:#fff;color:#000;border:none;font-size:30px}
-.item{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #1a1a1a;cursor:pointer}.item.active{background:#0a0000}.item .n{color:#666;width:24px}.item .info{flex:1;min-width:0}.item .info b{font-size:18px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.item .info span{color:#888;font-size:12px}.tag{font-size:10px;border:1px solid #333;padding:3px 7px;border-radius:99px;color:#aaa}.play{width:44px;height:44px;border-radius:50%;background:#fff;color:#000;border:none;font-size:18px}
+.controls{display:flex;justify-content:center;gap:18px;margin-top:14px}.ctrl{width:52px;height:52px;border-radius:50%;font-size:20px}.play-big{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;border:2px solid var(--gold);font-size:30px;box-shadow:0 0 22px rgba(43,127,255,.7)}
+.vol{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:12px}.vol input{width:170px;accent-color:var(--gold)}
+.item{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #141a2a;cursor:pointer}.item.active{background:linear-gradient(90deg,#0a1a3a,#000);border-left:3px solid var(--gold);padding-left:10px}
+.item .n{color:var(--gold);width:24px;font-weight:900}.item .info{flex:1;min-width:0}.item .info b{font-size:18px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.item .info span{color:#888;font-size:12px}
+.tag{font-size:10px;border:1px solid var(--gold);color:var(--gold);padding:3px 7px;border-radius:99px}.tag.blue{border-color:var(--blue);color:#7aa2ff}
+.play{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;border:1px solid var(--gold);font-size:18px}
 .status{margin-top:10px;font-weight:800;font-size:14px}.status.live{color:#00ff88}.status.err{color:#ff6b6b}
-.bar{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:1px solid #222;padding:10px 14px;display:flex;gap:10px;align-items:center}.bar b{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.note{border:1px solid #333;border-radius:14px;padding:14px;margin-top:14px;color:#bbb;font-size:13px;line-height:1.6}
+.section{font-size:12px;letter-spacing:3px;color:var(--gold);font-weight:800;margin:20px 0 4px}
+.chip{display:inline-block;border:1px solid #1e3a6e;padding:7px 11px;border-radius:999px;font-size:12px;margin:4px 4px 0 0;cursor:pointer;background:#0a0f1e}
+.bar{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:1px solid var(--gold);padding:10px 14px;display:flex;gap:10px;align-items:center}.bar b{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bar small{color:#888}
+.premium-card{background:linear-gradient(135deg,#0a0f1e,#050a14);border:1px solid #1e3a6e;border-radius:16px;padding:16px;margin-top:14px}
+.premium-card b{color:var(--gold)}.premium-card p{color:#aab8ff;font-size:13px;line-height:1.6}
 </style></head><body>
-<header><div class="logo"><div class="badge">S<i>●</i></div><div class="lt"><div class="a">RADIO <em>BY SABI</em></div><div class="b">SABI BY SABI</div></div></div><button id="ledBtn">LED OFF</button></header>
-<button class="unlock" id="unlockBtn">🔓 LEJO ZËRIN — SHTYP KËTU PARË (1 herë)</button>
+<div class="goldline"></div>
+<header><div class="logo"><div class="logo-badge"><span class="crown">👑</span><b>S<em>•</em></b><i></i></div><div class="lt"><div class="a">RADIO <em>BY SABI</em></div><div class="b">SABI BY SABI • VIP</div></div></div><span class="vip-badge">★ VIP PREMIUM</span></header>
+<div class="blueline"></div>
+<button class="unlock" id="unlockBtn">🔓 LEJO ZËRIN — SHTYP KËTU PARË</button>
 <div class="wrap">
-<section class="player"><div style="font-size:11px;letter-spacing:3px;color:#888;font-weight:800">SABI BY SABI • LIVE</div>
-<h1 id="bigTitle">RADIO<br><span>BY SABI</span></h1><div class="sub" id="bigSub">ZGJIDH NJË RADIO</div><div class="meta" id="bigMeta">Shtyp LEJO ZËRIN lart, pastaj shtyp një radio poshtë.</div>
-<div class="status" id="status">STATUS: PRIT — SHTYP LEJO ZËRIN</div>
-<!-- PLAYER NATIV - KY ËSHTË ÇELËSI, E SHIHNI DHE E SHTYPNI VETË PLAY NËSE DUHET -->
+<div class="vip-banner"><div class="glow">👑</div><h2>VIP <span>PREMIUM</span> • SABI BY SABI</h2><p>E zezë • Blu • Gold. Lokale, House, Latitude + Radio Live. Pa reklama, pa njoftime, pa login. Vetëm shtyp PLAY.</p><div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap"><button class="gold" id="vipPlay">▶ LUAJ VIP</button><button class="blue" id="vipLokale">LOKALE VIP</button><button id="vipHouse">HOUSE VIP</button></div></div>
+<section class="player"><div style="font-size:11px;letter-spacing:3px;color:#7aa2ff;font-weight:800">SABI BY SABI • VIP LIVE</div>
+<h1 id="bigTitle">RADIO<br><span>BY SABI</span></h1><div class="sub" id="bigSub">ZGJIDH NJË RADIO • VIP</div><div class="meta" id="bigMeta">Lokale • House • Latitude • Radio Live • VIP Premium</div>
+<div class="status" id="status">STATUS: SHTYP LEJO ZËRIN LART</div>
 <audio id="audio" controls="" playsinline="" preload="none" src=""></audio>
-<p style="color:#888;font-size:12px;margin:6px 0 0">Nëse dëgjon nga ky player nativ lart, atëherë telefoni / browseri yt e lejon zërin. Nëse jo, rrit volumin anësor të telefonit.</p>
 <div class="controls"><button class="ctrl" id="prevBtn">‹</button><button class="play-big" id="mainPlay">▶</button><button class="ctrl" id="nextBtn">›</button></div>
-</section>
-<div class="tabs" id="tabs"><button class="active">Të Gjitha</button><button class="">Radio Live</button><button class="">Lokale</button><button class="">House</button><button class="">Latitude</button></div>
-<div id="listEl"><div class="item"><span class="n">01</span><div class="info"><b>Radio Divjaka HD</b><span>MP3 • Pop / Dance / Folk • MË E SIGURTA</span></div><span class="tag">Radio Live</span><button class="play">▶</button></div><div class="item"><span class="n">02</span><div class="info"><b>Radio BLLACA</b><span>MP3 • Lokale</span></div><span class="tag">Radio Live</span><button class="play">▶</button></div><div class="item"><span class="n">03</span><div class="info"><b>HM Radio</b><span>MP3 • Folk</span></div><span class="tag">Radio Live</span><button class="play">▶</button></div><div class="item"><span class="n">04</span><div class="info"><b>ABC Red FM</b><span>MP3 • Pop</span></div><span class="tag">Radio Live</span><button class="play">▶</button></div><div class="item"><span class="n">05</span><div class="info"><b>Albanian Baby Radio</b><span>MP3 • Family</span></div><span class="tag">Radio Live</span><button class="play">▶</button></div><div class="item"><span class="n">06</span><div class="info"><b>LOKALE 1</b><span>TALLAVA • AHENG • Beat në telefon</span></div><span class="tag">Lokale</span><button class="play">▶</button></div><div class="item"><span class="n">07</span><div class="info"><b>LOKALE 2</b><span>TALLAVA • DASËM</span></div><span class="tag">Lokale</span><button class="play">▶</button></div><div class="item"><span class="n">08</span><div class="info"><b>HOUSE 1</b><span>HOUSE • CLUB • 128 BPM</span></div><span class="tag">House</span><button class="play">▶</button></div><div class="item"><span class="n">09</span><div class="info"><b>LATITUDE 1</b><span>MELODIC HOUSE • LATITUDE</span></div><span class="tag">Latitude</span><button class="play">▶</button></div><div class="item"><span class="n">10</span><div class="info"><b>SABI BEAT</b><span>SABI BY SABI • BOUNCE</span></div><span class="tag">House</span><button class="play">▶</button></div><div class="item"><span class="n">11</span><div class="info"><b>Radio Tirana 1</b><span>RTSH • HLS - provoje e fundit</span></div><span class="tag">Radio Live</span><button class="play">▶</button></div></div>
-<div class="note"><b>SI TA TESTOSH SAKT:</b><br>1. Shtyp <b>LEJO ZËRIN</b> — duhet të dëgjosh 1 beep. Nëse s'dëgjove beep, rrit volumin anësor.<br>2. Shtyp <b>Radio Divjaka HD</b> (MP3, më e sigurta) — prit 5 sekonda.<br>3. Nëse luan Divjaka, luajnë të gjitha. Nëse s'luan, shtyp ▶ te playeri nativ lart — ai është player i telefonit, jo i faqes.<br><br><b>PËR GITHUB:</b> Ngarkoje këtë file si <b>index.html</b> → Settings → Pages → Branch main → Save. Në GitHub Pages zëri nuk bllokohet si në preview-in e Meta AI.</div>
+<div class="vol"><span style="font-size:12px;color:#aaa;font-weight:800">VOL</span><input type="range" id="vol" min="0" max="100" value="90"><span id="volVal" style="color:var(--gold);font-weight:900">90%</span><button id="muteBtn">🔊</button></div>
+<div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap"><button id="detailsBtn">Details</button><button id="listenBtn">Listen</button><button class="gold" id="favBtn">♥ Favorite</button><button id="shareBtn">Share</button></div></section>
+<div class="tabs" id="tabs"><button class="active">Të Gjitha</button><button class="">Radio Live</button><button class="">Lokale</button><button class="">House</button><button class="">Latitude</button><button class="">★ VIP</button><button class="">♥ Favoritet</button></div>
+<div id="listEl"><div class="item"><span class="n">01</span><div class="info"><b>Radio Divjaka HD</b><span>MP3 • Pop / Dance / Folk • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">02</span><div class="info"><b>Radio BLLACA</b><span>MP3 • Lokale • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">03</span><div class="info"><b>HM Radio</b><span>MP3 • Folk • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">04</span><div class="info"><b>ABC Red FM</b><span>MP3 • Pop • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">05</span><div class="info"><b>Albanian Baby Radio</b><span>MP3 • Family</span></div><span class="tag blue">Radio Live</span><button class="play">▶</button></div><div class="item"><span class="n">06</span><div class="info"><b>LOKALE VIP 1</b><span>TALLAVA • AHENG • 140 BPM • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">07</span><div class="info"><b>LOKALE VIP 2</b><span>TALLAVA • DASËM • 138 BPM • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">08</span><div class="info"><b>LOKALE 3</b><span>AHENG • 142 BPM</span></div><span class="tag blue">Lokale</span><button class="play">▶</button></div><div class="item"><span class="n">09</span><div class="info"><b>HOUSE VIP 1</b><span>HOUSE • CLUB • 128 BPM • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">10</span><div class="info"><b>HOUSE VIP 2</b><span>DEEP HOUSE • 122 BPM • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">11</span><div class="info"><b>HOUSE 3</b><span>TECH HOUSE • 130 BPM</span></div><span class="tag blue">House</span><button class="play">▶</button></div><div class="item"><span class="n">12</span><div class="info"><b>LATITUDE VIP 1</b><span>MELODIC • LATITUDE • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">13</span><div class="info"><b>LATITUDE VIP 2</b><span>MELODIC • BOUNCE • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">14</span><div class="info"><b>LATITUDE 3</b><span>SUNSET • 123 BPM</span></div><span class="tag blue">Latitude</span><button class="play">▶</button></div><div class="item"><span class="n">15</span><div class="info"><b>SABI BEAT VIP</b><span>SABI BY SABI • BOUNCE • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">16</span><div class="info"><b>SABI BEAT 2</b><span>SABI • DARK • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">17</span><div class="info"><b>Radio Tirana 1</b><span>RTSH • HLS</span></div><span class="tag blue">Radio Live</span><button class="play">▶</button></div></div>
+<div class="premium-card"><b>★ VIP PREMIUM — ÇKA MERR?</b><p>✓ Të gjitha këngët luajnë • ✓ Lokale + House + Latitude • ✓ Radio Live shqiptare • ✓ Pa reklama • ✓ Pa login • ✓ Ruhen Favoritet • ✓ Punon në GitHub Pages si index.html</p></div>
+<div class="section">FAVORITET E MIA</div><div id="favEl"><p style="color:#666;font-size:13px">Shtyp ♥ Favorite te një këngë.</p></div>
+<div class="section">HISTORIA</div><div id="histEl"></div>
 </div>
-<div class="bar"><b><span id="now">GATI</span><br><small id="st">SHTYP LEJO ZËRIN</small></b><button id="stopBtn">STOP</button></div>
+<div class="bar"><b><span id="now">GATI • VIP</span><br><small id="st">SHTYP LEJO ZËRIN</small></b><button class="gold" id="stopBtn">STOP</button></div>
 <script>
 const tracks=[
- {name:"Radio Divjaka HD",desc:"MP3 • Pop / Dance / Folk • MË E SIGURTA",genre:"Radio Live",url:"https://stream.zeno.fm/brc5btguqg8uv"},
- {name:"Radio BLLACA",desc:"MP3 • Lokale",genre:"Radio Live",url:"https://stream.zeno.fm/0smrlmhdbxuuv"},
- {name:"HM Radio",desc:"MP3 • Folk",genre:"Radio Live",url:"https://stream.zeno.fm/1nykd3t9f7qtv"},
- {name:"ABC Red FM",desc:"MP3 • Pop",genre:"Radio Live",url:"https://stream.zeno.fm/uq9wmejy9hytv"},
- {name:"Albanian Baby Radio",desc:"MP3 • Family",genre:"Radio Live",url:"https://stream.zeno.fm/d6v0xkba04zuv"},
- {name:"LOKALE 1",desc:"TALLAVA • AHENG • Beat në telefon",genre:"Lokale",kind:"lokale"},
- {name:"LOKALE 2",desc:"TALLAVA • DASËM",genre:"Lokale",kind:"lokale2"},
- {name:"HOUSE 1",desc:"HOUSE • CLUB • 128 BPM",genre:"House",kind:"house"},
- {name:"LATITUDE 1",desc:"MELODIC HOUSE • LATITUDE",genre:"Latitude",kind:"latitude"},
- {name:"SABI BEAT",desc:"SABI BY SABI • BOUNCE",genre:"House",kind:"beat"},
- {name:"Radio Tirana 1",desc:"RTSH • HLS - provoje e fundit",genre:"Radio Live",url:"https://radiolive.rtsh.dev/radiotirana1",hls:true},
+ {name:"Radio Divjaka HD",desc:"MP3 • Pop / Dance / Folk • VIP",genre:"Radio Live",vip:true,url:"https://stream.zeno.fm/brc5btguqg8uv"},
+ {name:"Radio BLLACA",desc:"MP3 • Lokale • VIP",genre:"Radio Live",vip:true,url:"https://stream.zeno.fm/0smrlmhdbxuuv"},
+ {name:"HM Radio",desc:"MP3 • Folk • VIP",genre:"Radio Live",vip:true,url:"https://stream.zeno.fm/1nykd3t9f7qtv"},
+ {name:"ABC Red FM",desc:"MP3 • Pop • VIP",genre:"Radio Live",vip:true,url:"https://stream.zeno.fm/uq9wmejy9hytv"},
+ {name:"Albanian Baby Radio",desc:"MP3 • Family",genre:"Radio Live",vip:false,url:"https://stream.zeno.fm/d6v0xkba04zuv"},
+ {name:"LOKALE VIP 1",desc:"TALLAVA • AHENG • 140 BPM • VIP",genre:"Lokale",vip:true,kind:"lokale"},
+ {name:"LOKALE VIP 2",desc:"TALLAVA • DASËM • 138 BPM • VIP",genre:"Lokale",vip:true,kind:"lokale2"},
+ {name:"LOKALE 3",desc:"AHENG • 142 BPM",genre:"Lokale",vip:false,kind:"lokale3"},
+ {name:"HOUSE VIP 1",desc:"HOUSE • CLUB • 128 BPM • VIP",genre:"House",vip:true,kind:"house"},
+ {name:"HOUSE VIP 2",desc:"DEEP HOUSE • 122 BPM • VIP",genre:"House",vip:true,kind:"house2"},
+ {name:"HOUSE 3",desc:"TECH HOUSE • 130 BPM",genre:"House",vip:false,kind:"house3"},
+ {name:"LATITUDE VIP 1",desc:"MELODIC • LATITUDE • VIP",genre:"Latitude",vip:true,kind:"latitude"},
+ {name:"LATITUDE VIP 2",desc:"MELODIC • BOUNCE • VIP",genre:"Latitude",vip:true,kind:"latitude2"},
+ {name:"LATITUDE 3",desc:"SUNSET • 123 BPM",genre:"Latitude",vip:false,kind:"latitude3"},
+ {name:"SABI BEAT VIP",desc:"SABI BY SABI • BOUNCE • VIP",genre:"House",vip:true,kind:"beat"},
+ {name:"SABI BEAT 2",desc:"SABI • DARK • VIP",genre:"House",vip:true,kind:"beat2"},
+ {name:"Radio Tirana 1",desc:"RTSH • HLS",genre:"Radio Live",vip:false,url:"https://radiolive.rtsh.dev/radiotirana1",hls:true},
 ];
-let filter="Të Gjitha",curIdx=-1,unlocked=false;
+let filter="Të Gjitha",curIdx=-1,unlocked=false,vol=0.9,muted=false;
+let favs=JSON.parse(localStorage.getItem('sabi_favs')||'[]');let hist=JSON.parse(localStorage.getItem('sabi_hist')||'[]');
+function saveFavs(){localStorage.setItem('sabi_favs',JSON.stringify(favs));}function saveHist(){localStorage.setItem('sabi_hist',JSON.stringify(hist.slice(0,10)));}
 document.addEventListener('dblclick',e=>e.preventDefault(),{passive:false});
 let lastTouch=0;document.addEventListener('touchend',e=>{const n=Date.now();if(n-lastTouch<300)e.preventDefault();lastTouch=n;},{passive:false});
 const audio=document.getElementById('audio');
 let actx=null,master=null,noiseBuf=null,timer=null,step=0,beatOn=false;
-function unlockAudio(){
-  try{
-    if(!actx){const C=window.AudioContext||window.webkitAudioContext;actx=new C();master=actx.createGain();master.gain.value=0.9;master.connect(actx.destination);const len=Math.floor(actx.sampleRate*0.08);noiseBuf=actx.createBuffer(1,len,actx.sampleRate);const d=noiseBuf.getChannelData(0);for(let i=0;i<len;i++)d[i]=Math.random()*2-1;}
-    if(actx.state==='suspended')actx.resume();
-    // BEEP i zhbllokimit - 1 beep i fortë
-    const t=actx.currentTime;const o=actx.createOscillator(),g=actx.createGain();o.type='square';o.frequency.value=880;g.gain.setValueAtTime(0.5,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.4);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.4);
-    unlocked=true;document.getElementById('status').textContent='STATUS: ZËRI U ZHBLLOKUA ✓ — TANI SHTYP NJË RADIO';document.getElementById('status').className='status live';document.getElementById('st').textContent='ZËRI U LEJUA';document.getElementById('unlockBtn').textContent='✓ ZËRI U LEJUA — TANI SHTYP NJË RADIO';document.getElementById('unlockBtn').style.background='#00aa55';
-  }catch(e){document.getElementById('status').textContent='STATUS: Nuk u zhbllokua - provo prap';}
-}
+function unlockAudio(){try{if(!actx){const C=window.AudioContext||window.webkitAudioContext;actx=new C();master=actx.createGain();master.gain.value=muted?0:vol;master.connect(actx.destination);const len=Math.floor(actx.sampleRate*0.08);noiseBuf=actx.createBuffer(1,len,actx.sampleRate);const d=noiseBuf.getChannelData(0);for(let i=0;i<len;i++)d[i]=Math.random()*2-1;} if(actx.state==='suspended')actx.resume();const t=actx.currentTime;const o=actx.createOscillator(),g=actx.createGain();o.type='square';o.frequency.value=880;g.gain.setValueAtTime(0.5,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.4);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.4);unlocked=true;setStatus('ZËRI U ZHBLLOKUA ✓ — TANI SHTYP NJË RADIO','live');document.getElementById('unlockBtn').textContent='✓ ZËRI U LEJUA — TANI SHTYP NJË RADIO';}catch(e){}}
 document.getElementById('unlockBtn').onclick=unlockAudio;
 function setStatus(m,cls){const s=document.getElementById('status');s.textContent='STATUS: '+m;s.className='status '+(cls||'');document.getElementById('st').textContent=m;}
+function setVol(v){vol=v;if(master)master.gain.value=muted?0:vol;audio.volume=muted?0:vol;document.getElementById('volVal').textContent=Math.round(vol*100)+'%';}
+document.getElementById('vol').addEventListener('input',e=>setVol(e.target.value/100));
+document.getElementById('muteBtn').onclick=()=>{muted=!muted;setVol(vol);document.getElementById('muteBtn').textContent=muted?'🔇':'🔊';};
 function stopBeat(){beatOn=false;if(timer){clearInterval(timer);timer=null;}}
 function stopAudio(){try{audio.pause();}catch(e){}}
-// BEAT ENGINE - i thjeshtë, i sigurt
-const CFG={lokale:[55,0,65.41,0,55,0,49,58.27],lokale2:[65.41,0,55,0,65.41,0,49,0],house:[55,55,55,55,65.41,55,49,58.27],latitude:[55,0,0,55,65.41,0,0,49],beat:[55,0,55,0,65.41,0,49,58.27]};
-function beatStep(s,kind){const t=actx.currentTime;const k=actx.createOscillator(),kg=actx.createGain();k.type='sine';k.frequency.setValueAtTime(150,t);k.frequency.exponentialRampToValueAtTime(48,t+0.12);kg.gain.setValueAtTime(0.9,t);kg.gain.exponentialRampToValueAtTime(0.001,t+0.28);k.connect(kg);kg.connect(master);k.start(t);k.stop(t+0.3);const bf=(CFG[kind]||CFG.beat)[s%8];if(bf){const b=actx.createOscillator(),fl=actx.createBiquadFilter(),bg=actx.createGain();b.type='sawtooth';b.frequency.value=bf;fl.type='lowpass';fl.frequency.value=420;bg.gain.setValueAtTime(0.0001,t);bg.gain.exponentialRampToValueAtTime(0.28,t+0.02);bg.gain.exponentialRampToValueAtTime(0.001,t+0.4);b.connect(fl);fl.connect(bg);bg.connect(master);b.start(t);b.stop(t+0.45);}}
-function startBeat(kind,bpm){if(!unlocked)unlockAudio();stopAudio();beatOn=true;step=0;beatStep(0,kind);timer=setInterval(()=>{step++;beatStep(step,kind);},60000/bpm/2);document.getElementById('mainPlay').textContent='❚❚';setStatus('LIVE • '+kind.toUpperCase(),'live');}
-function playIdx(i){
-  const s=tracks[i];curIdx=i;
-  document.getElementById('bigTitle').innerHTML=s.name.toUpperCase().replace(' ','<br>');document.getElementById('bigSub').textContent=s.desc;document.getElementById('now').textContent=s.name;render();
-  stopBeat();
-  if(s.kind){
-    if(!unlocked)unlockAudio();
-    startBeat(s.kind, s.kind==='lokale'?140:128); return;
-  }
-  // RADIO - RRUGA MË E THJESHTË, PA HLS.JS, PA TRUKE
-  stopAudio();
-  setStatus('DUKE U LIDHUR ME '+s.name+'... prit 5 sekonda');
-  // HLS (RTSH) - përdor hls.js vetëm nëse ekziston, përndryshe provo direkt
-  if(s.hls && window.Hls && typeof Hls!=='undefined' && Hls.isSupported()){
-    // ngarko hls.js dinamikisht
-    const sc=document.createElement('script');sc.src='https://cdn.jsdelivr.net/npm/hls.js@latest';sc.onload=()=>{const h=new Hls();h.loadSource(s.url);h.attachMedia(audio);h.on(Hls.Events.MANIFEST_PARSED,()=>{audio.volume=1;audio.play().then(()=>setStatus('LIVE • '+s.name,'live')).catch(()=>setStatus('Shtyp ▶ te playeri lart','err'));});};document.head.appendChild(sc);
-  } else {
-    audio.src=s.url; audio.volume=1; audio.load();
-    // Prit 200ms pastaj play - iPhone e do këtë
-    setTimeout(()=>{audio.play().then(()=>setStatus('LIVE • '+s.name,'live')).catch(()=>{setStatus('Shtyp ▶ te playeri nativ lart — browseri e bllokoi auto-play','err');});},200);
-  }
-  document.getElementById('mainPlay').textContent='❚❚';
-}
+const CFG={lokale:[55,0,65.41,0,55,0,49,58.27],lokale2:[65.41,0,55,0,65.41,0,49,0],lokale3:[55,0,55,0,65.41,55,49,0],house:[55,55,55,55,65.41,55,49,58.27],house2:[49,0,49,0,55,0,49,58.27],house3:[55,55,65.41,55,55,55,49,58.27],latitude:[55,0,0,55,65.41,0,0,49],latitude2:[55,0,55,0,65.41,0,58.27,0],latitude3:[55,0,0,55,49,0,0,58.27],beat:[55,0,55,0,65.41,0,49,58.27],beat2:[55,55,55,0,65.41,0,49,58.27]};
+function beatStep(s,kind){const t=actx.currentTime;const k=actx.createOscillator(),kg=actx.createGain();k.type='sine';k.frequency.setValueAtTime(150,t);k.frequency.exponentialRampToValueAtTime(48,t+0.12);kg.gain.setValueAtTime(0.9,t);kg.gain.exponentialRampToValueAtTime(0.001,t+0.28);k.connect(kg);kg.connect(master);k.start(t);k.stop(t+0.3);const bf=(CFG[kind]||CFG.beat)[s%8];if(bf){const b=actx.createOscillator(),fl=actx.createBiquadFilter(),bg=actx.createGain();b.type='sawtooth';b.frequency.value=bf;fl.type='lowpass';fl.frequency.value=420;bg.gain.setValueAtTime(0.0001,t);bg.gain.exponentialRampToValueAtTime(0.28,t+0.02);bg.gain.exponentialRampToValueAtTime(0.001,t+0.4);b.connect(fl);fl.connect(bg);bg.connect(master);b.start(t);b.stop(t+0.45);}const lf=[220,261.63,329.63,440,523.25][s%5];if(kind.includes('latitude')&&lf){const o=actx.createOscillator(),g=actx.createGain();o.type='triangle';o.frequency.value=lf;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(0.14,t+0.03);g.gain.exponentialRampToValueAtTime(0.001,t+0.35);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.4);}}
+function startBeat(kind,bpm){if(!unlocked)unlockAudio();stopAudio();beatOn=true;step=0;beatStep(0,kind);timer=setInterval(()=>{step++;beatStep(step,kind);},60000/bpm/2);document.getElementById('mainPlay').textContent='❚❚';setStatus('LIVE VIP • '+kind.toUpperCase(),'live');}
+function playIdx(i){const s=tracks[i];curIdx=i;document.getElementById('bigTitle').innerHTML=s.name.toUpperCase().replace(' ','<br>');document.getElementById('bigSub').textContent=s.desc+(s.vip?' • ★ VIP':'');document.getElementById('now').textContent=s.name;hist.unshift(s.name);hist=[...new Set(hist)].slice(0,10);saveHist();render();stopBeat();
+ if(s.kind){startBeat(s.kind,128);return;}
+ stopAudio();setStatus('DUKE U LIDHUR ME '+s.name+'... prit 5 sekonda');
+ if(s.hls){const sc=document.createElement('script');sc.src='https://cdn.jsdelivr.net/npm/hls.js@latest';sc.onload=()=>{const h=new Hls();h.loadSource(s.url);h.attachMedia(audio);h.on(Hls.Events.MANIFEST_PARSED,()=>{audio.volume=muted?0:vol;audio.play().then(()=>setStatus('LIVE VIP • '+s.name,'live')).catch(()=>setStatus('Shtyp ▶ te playeri lart','err'));});};document.head.appendChild(sc);}
+ else{audio.src=s.url;audio.volume=muted?0:vol;audio.load();setTimeout(()=>{audio.play().then(()=>setStatus('LIVE VIP • '+s.name,'live')).catch(()=>setStatus('Shtyp ▶ te playeri nativ lart','err'));},200);}
+ document.getElementById('mainPlay').textContent='❚❚';}
 function toggleMain(){if(curIdx<0){playIdx(0);return;}const s=tracks[curIdx];if(s.kind){if(beatOn){stopBeat();document.getElementById('mainPlay').textContent='▶';}else{startBeat(s.kind,128);}return;} if(audio.paused){audio.play().catch(()=>{});document.getElementById('mainPlay').textContent='❚❚';}else{audio.pause();document.getElementById('mainPlay').textContent='▶';}}
 document.getElementById('mainPlay').onclick=toggleMain;
 document.getElementById('prevBtn').onclick=()=>{if(curIdx<0)playIdx(0);else playIdx((curIdx-1+tracks.length)%tracks.length);};
 document.getElementById('nextBtn').onclick=()=>{if(curIdx<0)playIdx(0);else playIdx((curIdx+1)%tracks.length);};
-document.getElementById('stopBtn').onclick=()=>{stopBeat();stopAudio();document.getElementById('mainPlay').textContent='▶';setStatus('STOP');document.getElementById('now').textContent='GATI';};
-audio.addEventListener('playing',()=>{setStatus('LIVE • '+(tracks[curIdx]?tracks[curIdx].name:''),'live');});
+document.getElementById('stopBtn').onclick=()=>{stopBeat();stopAudio();document.getElementById('mainPlay').textContent='▶';setStatus('STOP');document.getElementById('now').textContent='GATI • VIP';};
+document.getElementById('vipPlay').onclick=()=>playIdx(0);
+document.getElementById('vipLokale').onclick=()=>{const idx=tracks.findIndex(t=>t.genre==='Lokale');playIdx(idx);};
+document.getElementById('vipHouse').onclick=()=>{const idx=tracks.findIndex(t=>t.genre==='House');playIdx(idx);};
+document.getElementById('detailsBtn').onclick=()=>{if(curIdx>=0)alert(tracks[curIdx].name+'\n'+tracks[curIdx].desc);};
+document.getElementById('listenBtn').onclick=()=>{if(curIdx>=0)playIdx(curIdx);else playIdx(0);};
+document.getElementById('favBtn').onclick=()=>{if(curIdx<0)return;if(favs.includes(curIdx))favs=favs.filter(x=>x!==curIdx);else favs.push(curIdx);saveFavs();render();};
+document.getElementById('shareBtn').onclick=()=>{if(navigator.share)navigator.share({title:'RADIO BY SABI VIP',text:'RADIO BY SABI - VIP PREMIUM'}).catch(()=>{});};
+audio.addEventListener('playing',()=>{if(curIdx>=0)setStatus('LIVE VIP • '+tracks[curIdx].name,'live');});
 audio.addEventListener('waiting',()=>{setStatus('DUKE U LIDHUR... prit');});
-audio.addEventListener('error',()=>{if(curIdx>=0)setStatus('Nuk u hap kjo - provo Divjaka HD (MP3)','err');});
-function render(){const tabs=document.getElementById('tabs');tabs.innerHTML='';["Të Gjitha","Radio Live","Lokale","House","Latitude"].forEach(g=>{const b=document.createElement('button');b.textContent=g;b.className=filter===g?'active':'';b.onclick=()=>{filter=g;render();};tabs.appendChild(b);});
- const el=document.getElementById('listEl');el.innerHTML='';tracks.forEach((s,i)=>{if(filter!=='Të Gjitha'&&s.genre!==filter)return;const d=document.createElement('div');d.className='item'+(i===curIdx?' active':'');d.innerHTML='<span class="n">'+String(i+1).padStart(2,'0')+'</span><div class="info"><b>'+s.name+'</b><span>'+s.desc+'</span></div><span class="tag">'+s.genre+'</span><button class="play">▶</button>';d.onclick=()=>playIdx(i);el.appendChild(d);});}
+audio.addEventListener('error',()=>{if(curIdx>=0)setStatus('Nuk u hap - provo Divjaka HD','err');});
+function render(){const tabs=document.getElementById('tabs');tabs.innerHTML='';["Të Gjitha","Radio Live","Lokale","House","Latitude","★ VIP","♥ Favoritet"].forEach(g=>{const b=document.createElement('button');b.textContent=g;b.className=filter===g?'active':'';b.onclick=()=>{filter=g;render();};tabs.appendChild(b);});
+ const el=document.getElementById('listEl');el.innerHTML='';tracks.forEach((s,i)=>{if(filter==='★ VIP'&&!s.vip)return;if(filter==='♥ Favoritet'&&!favs.includes(i))return;if(filter!=='Të Gjitha'&&filter!=='★ VIP'&&filter!=='♥ Favoritet'&&s.genre!==filter)return;const d=document.createElement('div');d.className='item'+(i===curIdx?' active':'');d.innerHTML='<span class="n">'+String(i+1).padStart(2,'0')+'</span><div class="info"><b>'+s.name+'</b><span>'+s.desc+'</span></div><span class="tag '+(s.vip?'':'blue')+'">'+(s.vip?'★ VIP':s.genre)+'</span><button class="play">▶</button>';d.onclick=()=>playIdx(i);el.appendChild(d);});
+ const fe=document.getElementById('favEl');fe.innerHTML='';if(!favs.length)fe.innerHTML='<p style="color:#666;font-size:13px">Shtyp ♥ Favorite te një këngë.</p>';favs.forEach(fi=>{const c=document.createElement('span');c.className='chip';c.textContent=tracks[fi].name;c.onclick=()=>playIdx(fi);fe.appendChild(c);});
+ const he=document.getElementById('histEl');he.innerHTML='';hist.forEach(h=>{const c=document.createElement('span');c.className='chip';c.textContent=h;c.onclick=()=>{const idx=tracks.findIndex(t=>t.name===h);if(idx>=0)playIdx(idx);};he.appendChild(c);});}
 render();
 </script><script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body></html>
