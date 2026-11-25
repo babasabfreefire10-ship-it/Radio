@@ -20,131 +20,149 @@
   font-family: "Optimistic Mono", ui-monospace, monospace;
 }
 </style><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
-<meta name="theme-color" content="#000000"><title>RADIO BY SABI • VIP PREMIUM</title>
-<style>
-*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{touch-action:manipulation}
-body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;padding-bottom:150px}
-:root{--blue:#2b7fff;--blue2:#00c2ff;--gold:#d4af37;--gold2:#f5d76e}
-.goldline{height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.blueline{height:1px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
-header{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(180deg,#050a14,#000);border-bottom:1px solid #1a2a4a}
-/* LOGO E RE - VIP */
-.logo{display:flex;gap:12px;align-items:center}
-.logo-badge{width:58px;height:58px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#0a1a3a,#000);border:2px solid var(--gold);display:flex;align-items:center;justify-content:center;position:relative;box-shadow:0 0 18px rgba(43,127,255,.6),0 0 8px rgba(212,175,55,.5);flex:0 0 58px}
-.logo-badge .crown{position:absolute;top:-10px;font-size:16px}
-.logo-badge b{font-size:28px;color:#fff}.logo-badge b em{font-style:normal;color:var(--gold)}
-.logo-badge i{position:absolute;bottom:6px;right:8px;width:8px;height:8px;background:var(--blue2);border-radius:50%;box-shadow:0 0 8px var(--blue2)}
-.lt .a{font-size:22px;font-weight:900;letter-spacing:1px}.lt .a em{font-style:normal;color:var(--gold)}
-.lt .b{font-size:9px;letter-spacing:3px;color:#7aa2ff;font-weight:800;margin-top:3px}
-.vip-badge{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#000;font-size:10px;font-weight:900;padding:6px 10px;border-radius:999px;letter-spacing:1px;box-shadow:0 0 14px rgba(212,175,55,.6)}
-button{cursor:pointer;background:#0a0f1e;color:#fff;border:1px solid #1e3a6e;padding:11px 15px;font-weight:800;border-radius:999px;font-size:13px}
-button:active{transform:scale(.96)}button.active{background:var(--blue);border-color:var(--blue)}button.gold{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#000;border-color:var(--gold)}
-button.blue{background:linear-gradient(90deg,var(--blue),var(--blue2));color:#fff;border-color:var(--blue)}
-.unlock{background:linear-gradient(90deg,var(--gold),var(--gold2));color:#000;width:calc(100% - 32px);margin:14px 16px 0;padding:18px;font-size:18px;border-radius:14px;border:none;box-shadow:0 0 20px rgba(212,175,55,.4)}
-.wrap{max-width:960px;margin:0 auto;padding:0 16px}
-.vip-banner{margin-top:14px;background:linear-gradient(135deg,#050a14,#0a1a3a,#050505);border:1px solid var(--gold);border-radius:18px;padding:18px;position:relative;overflow:hidden}
-.vip-banner .glow{position:absolute;right:-20px;top:-30px;font-size:120px;opacity:.12}
-.vip-banner h2{margin:0;font-size:24px}.vip-banner h2 span{color:var(--gold)}.vip-banner p{color:#aab8ff;font-size:13px;margin:8px 0 0;line-height:1.5}
-.player{padding:18px 0 6px}h1{font-size:clamp(44px,13vw,88px);line-height:.88;margin:8px 0;text-transform:uppercase}h1 span{color:var(--blue2)}
-.sub{color:var(--gold);font-weight:900;letter-spacing:2px}.meta{color:#999;font-size:13px;margin-top:6px}
-audio{width:100%;margin-top:14px;background:#0a0f1e;border-radius:12px;border:1px solid #1e3a6e}
-.tabs{display:flex;gap:8px;overflow-x:auto;padding:10px 0;scrollbar-width:none}.tabs button{flex:0 0 auto}
-.controls{display:flex;justify-content:center;gap:18px;margin-top:14px}.ctrl{width:52px;height:52px;border-radius:50%;font-size:20px}.play-big{width:82px;height:82px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;border:2px solid var(--gold);font-size:30px;box-shadow:0 0 22px rgba(43,127,255,.7)}
-.vol{display:flex;align-items:center;gap:10px;justify-content:center;margin-top:12px}.vol input{width:170px;accent-color:var(--gold)}
-.item{display:flex;align-items:center;gap:12px;padding:15px 0;border-bottom:1px solid #141a2a;cursor:pointer}.item.active{background:linear-gradient(90deg,#0a1a3a,#000);border-left:3px solid var(--gold);padding-left:10px}
-.item .n{color:var(--gold);width:24px;font-weight:900}.item .info{flex:1;min-width:0}.item .info b{font-size:18px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.item .info span{color:#888;font-size:12px}
-.tag{font-size:10px;border:1px solid var(--gold);color:var(--gold);padding:3px 7px;border-radius:99px}.tag.blue{border-color:var(--blue);color:#7aa2ff}
-.play{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;border:1px solid var(--gold);font-size:18px}
-.status{margin-top:10px;font-weight:800;font-size:14px}.status.live{color:#00ff88}.status.err{color:#ff6b6b}
-.section{font-size:12px;letter-spacing:3px;color:var(--gold);font-weight:800;margin:20px 0 4px}
-.chip{display:inline-block;border:1px solid #1e3a6e;padding:7px 11px;border-radius:999px;font-size:12px;margin:4px 4px 0 0;cursor:pointer;background:#0a0f1e}
-.bar{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:1px solid var(--gold);padding:10px 14px;display:flex;gap:10px;align-items:center}.bar b{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bar small{color:#888}
-.premium-card{background:linear-gradient(135deg,#0a0f1e,#050a14);border:1px solid #1e3a6e;border-radius:16px;padding:16px;margin-top:14px}
-.premium-card b{color:var(--gold)}.premium-card p{color:#aab8ff;font-size:13px;line-height:1.6}
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>SABI BLACK — SERIOZ SI NË VIDEO</title><style>
+*{box-sizing:border-box;border-radius:0!important}body{margin:0;background:#000;color:#fff;font-family:Arial,sans-serif;overflow-x:hidden;padding-bottom:120px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-bottom:2px solid #fff;background:#000;position:sticky;top:0;z-index:10}
+.logo{font-weight:900;font-size:20px;letter-spacing:-1px}.logo i{font-style:normal;color:#ff0000}.logo small{display:block;font-size:9px;letter-spacing:4px;color:#888;font-weight:400}
+.top button{background:#fff;color:#000;border:none;padding:10px 14px;font-weight:900}
+.unlock{width:calc(100% - 28px);margin:14px;background:#ff0000;color:#fff;border:none;padding:18px;font-weight:900;font-size:18px}
+.wrap{padding:0 14px;max-width:980px;margin:0 auto}
+/* VIDEO PLAYER - KATROR */
+.video-player{border:2px solid #fff;background:#050505;padding:18px;margin-top:4px;position:relative}
+.video-player .tag{position:absolute;right:-2px;top:-2px;background:#ff0000;color:#fff;padding:5px 10px;font-weight:900;font-size:11px;letter-spacing:2px}
+.video-player h1{font-size:clamp(48px,13vw,86px);line-height:.85;margin:10px 0;letter-spacing:-2px;text-transform:uppercase}.video-player h1 span{color:#ff0000}
+.video-player .sub{color:#fff;font-weight:900;letter-spacing:3px;font-size:14px}.video-player .desc{color:#888;font-size:13px;margin-top:6px}
+canvas{width:100%;height:70px;background:#000;border:1px solid #222;margin-top:12px}
+.progress{height:8px;background:#222;margin-top:14px;position:relative}.progress i{position:absolute;left:0;top:0;bottom:0;background:#ff0000;width:0%}
+.progress span{position:absolute;right:0;top:-18px;font-size:11px;color:#888}
+.time-row{display:flex;justify-content:space-between;color:#888;font-size:12px;margin-top:6px}
+/* BUTONAT < > SI NE VIDEO - TE MEDHENJ */
+.big-controls{display:flex;align-items:center;justify-content:center;gap:14px;margin:18px 0 10px}
+.big-controls .arrow{width:64px;height:64px;background:#000;color:#fff;border:2px solid #fff;font-size:28px;font-weight:900}
+.big-controls .play{width:92px;height:92px;background:#fff;color:#000;border:none;font-size:36px;font-weight:900}
+.big-controls .arrow:active,.big-controls .play:active{transform:scale(.95)}
+.actions{display:flex;gap:10px}.actions button{flex:1;background:#000;color:#fff;border:2px solid #fff;padding:14px;font-weight:900}.actions button.red{background:#ff0000;border-color:#ff0000}
+.status{margin-top:12px;font-weight:900;font-size:13px;border-left:4px solid #ff0000;padding-left:10px}.status.live{border-color:#00ff88;color:#00ff88}
+audio{width:100%;margin-top:12px;filter:invert(1)}
+.section{font-size:12px;letter-spacing:4px;font-weight:900;margin:22px 0 6px;border-bottom:2px solid #fff;padding-bottom:6px;display:flex;justify-content:space-between;align-items:center}
+.section button{background:#fff;color:#000;border:none;padding:6px 10px;font-weight:900;font-size:11px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:8px 0}.tabs button{background:#000;color:#fff;border:2px solid #333;padding:10px 14px;font-weight:900;flex:0 0 auto}.tabs button.on{background:#fff;color:#000}
+.item{display:flex;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid #1a1a1a;cursor:pointer}.item.on{background:#1a0000;border-left:4px solid #ff0000;padding-left:10px}
+.item .num{font-size:22px;font-weight:900;color:#333;width:30px}.item.on .num{color:#ff0000}.item .info{flex:1;min-width:0}.item .info b{font-size:18px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.item .info span{color:#888;font-size:12px}
+.item .go{width:44px;height:44px;background:#fff;color:#000;border:none;font-weight:900}
+.grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.grid button{background:#0a0a0a;color:#fff;border:2px solid #333;padding:14px 8px;font-weight:900;font-size:12px}.grid button.on{border-color:#ff0000;background:#1a0000}.grid small{display:block;color:#888;font-weight:400;font-size:11px}
+.card{border:2px solid #333;padding:14px;margin-top:10px;background:#050505}.card h3{margin:0;font-size:16px}.card p{color:#888;font-size:13px;line-height:1.5;margin:8px 0 0}
+.card input{width:100%;background:#000;color:#fff;border:2px solid #333;padding:12px;font-size:14px;margin-top:10px}
+.card button{background:#fff;color:#000;border:none;padding:11px 14px;font-weight:900;margin-top:8px}
+.chip{display:inline-block;border:2px solid #333;padding:7px 10px;font-size:12px;margin:4px 4px 0 0;cursor:pointer;font-weight:800}
+.bar{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:2px solid #fff;padding:10px 14px;display:flex;gap:10px;align-items:center;z-index:20}.bar b{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.bar small{color:#888}
+.api-box{border:2px solid #ff0000;padding:14px;margin-top:10px}.api-box b{color:#ff0000}
 </style></head><body>
-<div class="goldline"></div>
-<header><div class="logo"><div class="logo-badge"><span class="crown">👑</span><b>S<em>•</em></b><i></i></div><div class="lt"><div class="a">RADIO <em>BY SABI</em></div><div class="b">SABI BY SABI • VIP</div></div></div><span class="vip-badge">★ VIP PREMIUM</span></header>
-<div class="blueline"></div>
-<button class="unlock" id="unlockBtn">🔓 LEJO ZËRIN — SHTYP KËTU PARË</button>
+<div class="top"><div class="logo">SABI<i>.</i>BLACK<small>SABI BY SABI • TIRANA</small></div><button id="apiTop">API LIVE</button></div>
+<button class="unlock" id="unlock">✓ ZËRI U LEJUA</button>
 <div class="wrap">
-<div class="vip-banner"><div class="glow">👑</div><h2>VIP <span>PREMIUM</span> • SABI BY SABI</h2><p>E zezë • Blu • Gold. Lokale, House, Latitude + Radio Live. Pa reklama, pa njoftime, pa login. Vetëm shtyp PLAY.</p><div style="display:flex;gap:8px;margin-top:12px;flex-wrap:wrap"><button class="gold" id="vipPlay">▶ LUAJ VIP</button><button class="blue" id="vipLokale">LOKALE VIP</button><button id="vipHouse">HOUSE VIP</button></div></div>
-<section class="player"><div style="font-size:11px;letter-spacing:3px;color:#7aa2ff;font-weight:800">SABI BY SABI • VIP LIVE</div>
-<h1 id="bigTitle">RADIO<br><span>BY SABI</span></h1><div class="sub" id="bigSub">ZGJIDH NJË RADIO • VIP</div><div class="meta" id="bigMeta">Lokale • House • Latitude • Radio Live • VIP Premium</div>
-<div class="status" id="status">STATUS: SHTYP LEJO ZËRIN LART</div>
-<audio id="audio" controls="" playsinline="" preload="none" src=""></audio>
-<div class="controls"><button class="ctrl" id="prevBtn">‹</button><button class="play-big" id="mainPlay">▶</button><button class="ctrl" id="nextBtn">›</button></div>
-<div class="vol"><span style="font-size:12px;color:#aaa;font-weight:800">VOL</span><input type="range" id="vol" min="0" max="100" value="90"><span id="volVal" style="color:var(--gold);font-weight:900">90%</span><button id="muteBtn">🔊</button></div>
-<div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap"><button id="detailsBtn">Details</button><button id="listenBtn">Listen</button><button class="gold" id="favBtn">♥ Favorite</button><button id="shareBtn">Share</button></div></section>
-<div class="tabs" id="tabs"><button class="active">Të Gjitha</button><button class="">Radio Live</button><button class="">Lokale</button><button class="">House</button><button class="">Latitude</button><button class="">★ VIP</button><button class="">♥ Favoritet</button></div>
-<div id="listEl"><div class="item"><span class="n">01</span><div class="info"><b>Radio Divjaka HD</b><span>MP3 • Pop / Dance / Folk • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">02</span><div class="info"><b>Radio BLLACA</b><span>MP3 • Lokale • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">03</span><div class="info"><b>HM Radio</b><span>MP3 • Folk • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">04</span><div class="info"><b>ABC Red FM</b><span>MP3 • Pop • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">05</span><div class="info"><b>Albanian Baby Radio</b><span>MP3 • Family</span></div><span class="tag blue">Radio Live</span><button class="play">▶</button></div><div class="item"><span class="n">06</span><div class="info"><b>LOKALE VIP 1</b><span>TALLAVA • AHENG • 140 BPM • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">07</span><div class="info"><b>LOKALE VIP 2</b><span>TALLAVA • DASËM • 138 BPM • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">08</span><div class="info"><b>LOKALE 3</b><span>AHENG • 142 BPM</span></div><span class="tag blue">Lokale</span><button class="play">▶</button></div><div class="item"><span class="n">09</span><div class="info"><b>HOUSE VIP 1</b><span>HOUSE • CLUB • 128 BPM • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">10</span><div class="info"><b>HOUSE VIP 2</b><span>DEEP HOUSE • 122 BPM • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">11</span><div class="info"><b>HOUSE 3</b><span>TECH HOUSE • 130 BPM</span></div><span class="tag blue">House</span><button class="play">▶</button></div><div class="item"><span class="n">12</span><div class="info"><b>LATITUDE VIP 1</b><span>MELODIC • LATITUDE • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">13</span><div class="info"><b>LATITUDE VIP 2</b><span>MELODIC • BOUNCE • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">14</span><div class="info"><b>LATITUDE 3</b><span>SUNSET • 123 BPM</span></div><span class="tag blue">Latitude</span><button class="play">▶</button></div><div class="item"><span class="n">15</span><div class="info"><b>SABI BEAT VIP</b><span>SABI BY SABI • BOUNCE • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">16</span><div class="info"><b>SABI BEAT 2</b><span>SABI • DARK • VIP</span></div><span class="tag ">★ VIP</span><button class="play">▶</button></div><div class="item"><span class="n">17</span><div class="info"><b>Radio Tirana 1</b><span>RTSH • HLS</span></div><span class="tag blue">Radio Live</span><button class="play">▶</button></div></div>
-<div class="premium-card"><b>★ VIP PREMIUM — ÇKA MERR?</b><p>✓ Të gjitha këngët luajnë • ✓ Lokale + House + Latitude • ✓ Radio Live shqiptare • ✓ Pa reklama • ✓ Pa login • ✓ Ruhen Favoritet • ✓ Punon në GitHub Pages si index.html</p></div>
-<div class="section">FAVORITET E MIA</div><div id="favEl"><p style="color:#666;font-size:13px">Shtyp ♥ Favorite te një këngë.</p></div>
-<div class="section">HISTORIA</div><div id="histEl"></div>
+<!-- SI NE VIDEO -->
+<div class="video-player"><span class="tag">LIVE • VIDEO STYLE</span>
+<p style="margin:0;color:#888;font-size:11px;letter-spacing:3px">SABI BLACK • ALL IN • SERIOZ</p>
+<h1 id="bigTitle">LATITUDE<br>1</h1>
+<div class="sub" id="bigSub">BOUNCE • MELODIC • LATITUDE</div>
+<div class="desc" id="bigDesc">Muzikë që luan vërtet • Lokale • House • Latitude • Radio Live</div>
+<canvas id="viz" width="600" height="70"></canvas>
+<div class="progress"><i id="progFill" style="width: 1.666667%;"></i><span id="progTxt">00:01</span></div>
+<div class="time-row"><span id="timeLeft">DUKE LUAJTUR • 00:01</span><span id="timeRight">SABI BLACK</span></div>
+<div class="status live" id="status">LIVE • LATITUDE</div>
+<audio id="audio" controls="" playsinline="" preload="none"></audio>
+<!-- BUTONAT < > -->
+<div class="big-controls"><button class="arrow" id="prev">&lt;</button><button class="play" id="play">❚❚</button><button class="arrow" id="next">&gt;</button></div>
+<div class="actions"><button id="detailsBtn">Details</button><button class="red" id="listenBtn">Listen</button><button id="favBtn">♥ Favorite</button><button id="shareBtn">Share</button></div>
+<div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap"><button id="shuffleBtn" style="flex:1;background:#000;color:#fff;border:2px solid #333;padding:11px;font-weight:900">🔀 SHUFFLE</button><button id="repeatBtn" style="flex:1;background:#000;color:#fff;border:2px solid #333;padding:11px;font-weight:900">↻ REPEAT: OFF</button><button id="volBtn" style="flex:1;background:#000;color:#fff;border:2px solid #333;padding:11px;font-weight:900">VOL: 90%</button></div>
 </div>
-<div class="bar"><b><span id="now">GATI • VIP</span><br><small id="st">SHTYP LEJO ZËRIN</small></b><button class="gold" id="stopBtn">STOP</button></div>
+<!-- API INTERESANTE -->
+<div class="section">API LIVE • GJËRA INTERESANTE <button id="refreshApi">RIFRESKO</button></div>
+<div class="api-box"><b>📻 RADIO BROWSER API — RADIO TË VËRTETA SHQIPTARE</b><p style="color:#aaa;font-size:13px;line-height:1.5">Ky buton merr radio live nga API reale (radio-browser.info), jo vetëm lista fikse. Nëse API nuk përgjigjet, përdoret lista e sigurt.</p><button id="loadApiBtn" style="background:#ff0000;color:#fff">NGARKO RADIO NGA API</button><span id="apiInfo" style="color:#888;font-size:12px;margin-left:8px"></span><div id="apiList"></div></div>
+<div class="card"><h3>🌤 TIRANA — MOTI LIVE (Open-Meteo API)</h3><p id="weather">Moti nuk u ngarkua — kontrollo internetin.</p><button id="weatherBtn">RIFRESKO MOTIN</button></div>
+<div class="card"><h3>🕒 ORA &amp; DATA — TIRANA</h3><p id="clock" style="font-size:22px;font-weight:900;color:#fff;margin:8px 0 0">02:31:54 m.d.</p><p id="dateLine">e mërkurë, 25 nëntor 2026</p></div>
+<div class="section">MOOD • RELAKS</div>
+<div class="grid" id="moods"><button data-mood="relax">RELAKS<small>Frymë</small></button><button data-mood="sea">DETI<small>Valë</small></button><button data-mood="rain">SHIU<small>Shi</small></button><button data-mood="fire">ZJARRI<small>Ngrohtë</small></button><button data-mood="night">NATA<small>Yje</small></button><button data-mood="focus">FOKUS<small>Punë</small></button></div>
+<div class="section">SLEEP TIMER</div><div style="display:flex;gap:8px;flex-wrap:wrap"><button data-timer="5">5 MIN</button><button data-timer="15">15 MIN</button><button data-timer="30">30 MIN</button><button data-timer="60">60 MIN</button><button id="timerOff">ANULO</button></div><div id="timerInfo" style="color:#ff0000;font-weight:900;margin-top:8px;font-size:13px"></div>
+<div class="section">LISTA • SI NË VIDEO</div>
+<div style="display:flex;gap:8px"><input id="search" placeholder="Kërko radio / këngë..." style="flex:1;background:#000;color:#fff;border:2px solid #333;padding:12px"><button id="searchBtn" style="background:#fff;color:#000;border:none;padding:12px 16px;font-weight:900">KËRKO</button></div>
+<div class="tabs" id="tabs"><button class="on">Të Gjitha</button><button class="">Radio Live</button><button class="">Lokale</button><button class="">House</button><button class="">Latitude</button><button class="">♥ Favoritet</button></div>
+<div id="list"><div class="item on"><div class="num">01</div><div class="info"><b>LATITUDE 1</b><span>BOUNCE • MELODIC • LATITUDE</span></div><button class="go">▶</button></div><div class="item"><div class="num">02</div><div class="info"><b>LATITUDE 2</b><span>MELODIC • BOUNCE • 124 BPM</span></div><button class="go">▶</button></div><div class="item"><div class="num">03</div><div class="info"><b>Radio Divjaka HD</b><span>MP3 • Pop / Dance • LIVE</span></div><button class="go">▶</button></div><div class="item"><div class="num">04</div><div class="info"><b>Radio BLLACA</b><span>MP3 • Lokale • LIVE</span></div><button class="go">▶</button></div><div class="item"><div class="num">05</div><div class="info"><b>HM Radio</b><span>MP3 • Folk • Lokale</span></div><button class="go">▶</button></div><div class="item"><div class="num">06</div><div class="info"><b>ABC Red FM</b><span>MP3 • Pop</span></div><button class="go">▶</button></div><div class="item"><div class="num">07</div><div class="info"><b>LOKALE 1</b><span>TALLAVA • AHENG • 140 BPM</span></div><button class="go">▶</button></div><div class="item"><div class="num">08</div><div class="info"><b>LOKALE 2</b><span>TALLAVA • DASËM • 138 BPM</span></div><button class="go">▶</button></div><div class="item"><div class="num">09</div><div class="info"><b>HOUSE 1</b><span>HOUSE • CLUB • 128 BPM</span></div><button class="go">▶</button></div><div class="item"><div class="num">10</div><div class="info"><b>HOUSE 2</b><span>DEEP • 122 BPM</span></div><button class="go">▶</button></div><div class="item"><div class="num">11</div><div class="info"><b>SABI BLACK BEAT</b><span>SABI BLACK • BOUNCE</span></div><button class="go">▶</button></div><div class="item"><div class="num">12</div><div class="info"><b>Radio Tirana 1</b><span>RTSH • HLS</span></div><button class="go">▶</button></div></div>
+<div class="section">FAVORITET &amp; HISTORIA</div><div id="favEl"><p style="color:#666;font-size:13px">Shtyp ♥ FAVORITE.</p></div><div id="histEl" style="margin-top:8px"><span class="chip">LATITUDE 1</span></div>
+<div class="card"><h3>PANORAMA</h3><p id="panoTxt">Natë e qetë në Tiranë. SABI BLACK — all in.</p><button id="panoBtn">NDRRO PANORAMËN</button></div>
+</div>
+<div class="bar"><b><span id="now">LATITUDE 1</span><br><small id="st">LIVE • LATITUDE</small></b><button id="stop" style="background:#ff0000;color:#fff;border:none;padding:11px 16px;font-weight:900">STOP</button></div>
 <script>
-const tracks=[
- {name:"Radio Divjaka HD",desc:"MP3 • Pop / Dance / Folk • VIP",genre:"Radio Live",vip:true,url:"https://stream.zeno.fm/brc5btguqg8uv"},
- {name:"Radio BLLACA",desc:"MP3 • Lokale • VIP",genre:"Radio Live",vip:true,url:"https://stream.zeno.fm/0smrlmhdbxuuv"},
- {name:"HM Radio",desc:"MP3 • Folk • VIP",genre:"Radio Live",vip:true,url:"https://stream.zeno.fm/1nykd3t9f7qtv"},
- {name:"ABC Red FM",desc:"MP3 • Pop • VIP",genre:"Radio Live",vip:true,url:"https://stream.zeno.fm/uq9wmejy9hytv"},
- {name:"Albanian Baby Radio",desc:"MP3 • Family",genre:"Radio Live",vip:false,url:"https://stream.zeno.fm/d6v0xkba04zuv"},
- {name:"LOKALE VIP 1",desc:"TALLAVA • AHENG • 140 BPM • VIP",genre:"Lokale",vip:true,kind:"lokale"},
- {name:"LOKALE VIP 2",desc:"TALLAVA • DASËM • 138 BPM • VIP",genre:"Lokale",vip:true,kind:"lokale2"},
- {name:"LOKALE 3",desc:"AHENG • 142 BPM",genre:"Lokale",vip:false,kind:"lokale3"},
- {name:"HOUSE VIP 1",desc:"HOUSE • CLUB • 128 BPM • VIP",genre:"House",vip:true,kind:"house"},
- {name:"HOUSE VIP 2",desc:"DEEP HOUSE • 122 BPM • VIP",genre:"House",vip:true,kind:"house2"},
- {name:"HOUSE 3",desc:"TECH HOUSE • 130 BPM",genre:"House",vip:false,kind:"house3"},
- {name:"LATITUDE VIP 1",desc:"MELODIC • LATITUDE • VIP",genre:"Latitude",vip:true,kind:"latitude"},
- {name:"LATITUDE VIP 2",desc:"MELODIC • BOUNCE • VIP",genre:"Latitude",vip:true,kind:"latitude2"},
- {name:"LATITUDE 3",desc:"SUNSET • 123 BPM",genre:"Latitude",vip:false,kind:"latitude3"},
- {name:"SABI BEAT VIP",desc:"SABI BY SABI • BOUNCE • VIP",genre:"House",vip:true,kind:"beat"},
- {name:"SABI BEAT 2",desc:"SABI • DARK • VIP",genre:"House",vip:true,kind:"beat2"},
- {name:"Radio Tirana 1",desc:"RTSH • HLS",genre:"Radio Live",vip:false,url:"https://radiolive.rtsh.dev/radiotirana1",hls:true},
+let tracks=[
+ {n:"LATITUDE 1",d:"BOUNCE • MELODIC • LATITUDE",g:"Latitude",k:"latitude"},
+ {n:"LATITUDE 2",d:"MELODIC • BOUNCE • 124 BPM",g:"Latitude",k:"latitude2"},
+ {n:"Radio Divjaka HD",d:"MP3 • Pop / Dance • LIVE",g:"Radio Live",u:"https://stream.zeno.fm/brc5btguqg8uv"},
+ {n:"Radio BLLACA",d:"MP3 • Lokale • LIVE",g:"Radio Live",u:"https://stream.zeno.fm/0smrlmhdbxuuv"},
+ {n:"HM Radio",d:"MP3 • Folk • Lokale",g:"Radio Live",u:"https://stream.zeno.fm/1nykd3t9f7qtv"},
+ {n:"ABC Red FM",d:"MP3 • Pop",g:"Radio Live",u:"https://stream.zeno.fm/uq9wmejy9hytv"},
+ {n:"LOKALE 1",d:"TALLAVA • AHENG • 140 BPM",g:"Lokale",k:"lokale"},
+ {n:"LOKALE 2",d:"TALLAVA • DASËM • 138 BPM",g:"Lokale",k:"lokale2"},
+ {n:"HOUSE 1",d:"HOUSE • CLUB • 128 BPM",g:"House",k:"house"},
+ {n:"HOUSE 2",d:"DEEP • 122 BPM",g:"House",k:"house2"},
+ {n:"SABI BLACK BEAT",d:"SABI BLACK • BOUNCE",g:"House",k:"beat"},
+ {n:"Radio Tirana 1",d:"RTSH • HLS",g:"Radio Live",u:"https://radiolive.rtsh.dev/radiotirana1",hls:1},
 ];
-let filter="Të Gjitha",curIdx=-1,unlocked=false,vol=0.9,muted=false;
+let filter="Të Gjitha",cur=-1,unlocked=false,mood=null,sleepTimer=null,shuffle=false,repeat=false,vol=0.9,searchQ="";
 let favs=JSON.parse(localStorage.getItem('sabi_favs')||'[]');let hist=JSON.parse(localStorage.getItem('sabi_hist')||'[]');
-function saveFavs(){localStorage.setItem('sabi_favs',JSON.stringify(favs));}function saveHist(){localStorage.setItem('sabi_hist',JSON.stringify(hist.slice(0,10)));}
+function saveF(){localStorage.setItem('sabi_favs',JSON.stringify(favs));}function saveH(){localStorage.setItem('sabi_hist',JSON.stringify(hist.slice(0,10)));}
 document.addEventListener('dblclick',e=>e.preventDefault(),{passive:false});
-let lastTouch=0;document.addEventListener('touchend',e=>{const n=Date.now();if(n-lastTouch<300)e.preventDefault();lastTouch=n;},{passive:false});
-const audio=document.getElementById('audio');
-let actx=null,master=null,noiseBuf=null,timer=null,step=0,beatOn=false;
-function unlockAudio(){try{if(!actx){const C=window.AudioContext||window.webkitAudioContext;actx=new C();master=actx.createGain();master.gain.value=muted?0:vol;master.connect(actx.destination);const len=Math.floor(actx.sampleRate*0.08);noiseBuf=actx.createBuffer(1,len,actx.sampleRate);const d=noiseBuf.getChannelData(0);for(let i=0;i<len;i++)d[i]=Math.random()*2-1;} if(actx.state==='suspended')actx.resume();const t=actx.currentTime;const o=actx.createOscillator(),g=actx.createGain();o.type='square';o.frequency.value=880;g.gain.setValueAtTime(0.5,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.4);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.4);unlocked=true;setStatus('ZËRI U ZHBLLOKUA ✓ — TANI SHTYP NJË RADIO','live');document.getElementById('unlockBtn').textContent='✓ ZËRI U LEJUA — TANI SHTYP NJË RADIO';}catch(e){}}
-document.getElementById('unlockBtn').onclick=unlockAudio;
-function setStatus(m,cls){const s=document.getElementById('status');s.textContent='STATUS: '+m;s.className='status '+(cls||'');document.getElementById('st').textContent=m;}
-function setVol(v){vol=v;if(master)master.gain.value=muted?0:vol;audio.volume=muted?0:vol;document.getElementById('volVal').textContent=Math.round(vol*100)+'%';}
-document.getElementById('vol').addEventListener('input',e=>setVol(e.target.value/100));
-document.getElementById('muteBtn').onclick=()=>{muted=!muted;setVol(vol);document.getElementById('muteBtn').textContent=muted?'🔇':'🔊';};
+const audio=document.getElementById('audio');const canvas=document.getElementById('viz');const ctx=canvas.getContext('2d');
+let actx=null,master=null,noiseBuf=null,timer=null,step=0,beatOn=false,moodTimer=null,analyser=null,elapsed=0,elapsedTimer=null;
+function drawViz(){ctx.fillStyle='#000';ctx.fillRect(0,0,canvas.width,canvas.height);if(analyser&&beatOn){const data=new Uint8Array(analyser.frequencyBinCount);analyser.getByteFrequencyData(data);for(let i=0;i<40;i++){const h=data[i*2]/255*60;ctx.fillStyle=i%2?'#ff0000':'#fff';ctx.fillRect(i*15,70-h,10,h);}}else{for(let i=0;i<40;i++){const h=8+Math.sin(Date.now()/300+i)*6+Math.random()*4;ctx.fillStyle=i%3?'#333':'#fff';ctx.fillRect(i*15,70-h,10,h);}}requestAnimationFrame(drawViz);}drawViz();
+function unlock(){try{if(!actx){const C=window.AudioContext||window.webkitAudioContext;actx=new C();master=actx.createGain();master.gain.value=0.9;analyser=actx.createAnalyser();analyser.fftSize=256;master.connect(analyser);analyser.connect(actx.destination);const len=Math.floor(actx.sampleRate*0.08);noiseBuf=actx.createBuffer(1,len,actx.sampleRate);const d=noiseBuf.getChannelData(0);for(let i=0;i<len;i++)d[i]=Math.random()*2-1;} if(actx.state==='suspended')actx.resume();const t=actx.currentTime;const o=actx.createOscillator(),g=actx.createGain();o.type='square';o.frequency.value=880;g.gain.setValueAtTime(0.5,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.4);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.4);unlocked=true;setSt('ZËRI U LEJUA ✓ — TANI SHTYP ▶ OSE NJË KËNGË','live');document.getElementById('unlock').textContent='✓ ZËRI U LEJUA';}catch(e){}}
+document.getElementById('unlock').onclick=unlock;
+function setSt(m,c){const s=document.getElementById('status');s.textContent=m;s.className='status '+(c||'');document.getElementById('st').textContent=m;}
+function fmt(s){const m=Math.floor(s/60),ss=Math.floor(s%60);return String(m).padStart(2,'0')+':'+String(ss).padStart(2,'0');}
+function startElapsed(){if(elapsedTimer)clearInterval(elapsedTimer);elapsed=0;elapsedTimer=setInterval(()=>{elapsed++;document.getElementById('progTxt').textContent=fmt(elapsed);document.getElementById('progFill').style.width=Math.min(100,elapsed%60/60*100)+'%';document.getElementById('timeLeft').textContent='DUKE LUAJTUR • '+fmt(elapsed);},1000);}
 function stopBeat(){beatOn=false;if(timer){clearInterval(timer);timer=null;}}
 function stopAudio(){try{audio.pause();}catch(e){}}
-const CFG={lokale:[55,0,65.41,0,55,0,49,58.27],lokale2:[65.41,0,55,0,65.41,0,49,0],lokale3:[55,0,55,0,65.41,55,49,0],house:[55,55,55,55,65.41,55,49,58.27],house2:[49,0,49,0,55,0,49,58.27],house3:[55,55,65.41,55,55,55,49,58.27],latitude:[55,0,0,55,65.41,0,0,49],latitude2:[55,0,55,0,65.41,0,58.27,0],latitude3:[55,0,0,55,49,0,0,58.27],beat:[55,0,55,0,65.41,0,49,58.27],beat2:[55,55,55,0,65.41,0,49,58.27]};
-function beatStep(s,kind){const t=actx.currentTime;const k=actx.createOscillator(),kg=actx.createGain();k.type='sine';k.frequency.setValueAtTime(150,t);k.frequency.exponentialRampToValueAtTime(48,t+0.12);kg.gain.setValueAtTime(0.9,t);kg.gain.exponentialRampToValueAtTime(0.001,t+0.28);k.connect(kg);kg.connect(master);k.start(t);k.stop(t+0.3);const bf=(CFG[kind]||CFG.beat)[s%8];if(bf){const b=actx.createOscillator(),fl=actx.createBiquadFilter(),bg=actx.createGain();b.type='sawtooth';b.frequency.value=bf;fl.type='lowpass';fl.frequency.value=420;bg.gain.setValueAtTime(0.0001,t);bg.gain.exponentialRampToValueAtTime(0.28,t+0.02);bg.gain.exponentialRampToValueAtTime(0.001,t+0.4);b.connect(fl);fl.connect(bg);bg.connect(master);b.start(t);b.stop(t+0.45);}const lf=[220,261.63,329.63,440,523.25][s%5];if(kind.includes('latitude')&&lf){const o=actx.createOscillator(),g=actx.createGain();o.type='triangle';o.frequency.value=lf;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(0.14,t+0.03);g.gain.exponentialRampToValueAtTime(0.001,t+0.35);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.4);}}
-function startBeat(kind,bpm){if(!unlocked)unlockAudio();stopAudio();beatOn=true;step=0;beatStep(0,kind);timer=setInterval(()=>{step++;beatStep(step,kind);},60000/bpm/2);document.getElementById('mainPlay').textContent='❚❚';setStatus('LIVE VIP • '+kind.toUpperCase(),'live');}
-function playIdx(i){const s=tracks[i];curIdx=i;document.getElementById('bigTitle').innerHTML=s.name.toUpperCase().replace(' ','<br>');document.getElementById('bigSub').textContent=s.desc+(s.vip?' • ★ VIP':'');document.getElementById('now').textContent=s.name;hist.unshift(s.name);hist=[...new Set(hist)].slice(0,10);saveHist();render();stopBeat();
- if(s.kind){startBeat(s.kind,128);return;}
- stopAudio();setStatus('DUKE U LIDHUR ME '+s.name+'... prit 5 sekonda');
- if(s.hls){const sc=document.createElement('script');sc.src='https://cdn.jsdelivr.net/npm/hls.js@latest';sc.onload=()=>{const h=new Hls();h.loadSource(s.url);h.attachMedia(audio);h.on(Hls.Events.MANIFEST_PARSED,()=>{audio.volume=muted?0:vol;audio.play().then(()=>setStatus('LIVE VIP • '+s.name,'live')).catch(()=>setStatus('Shtyp ▶ te playeri lart','err'));});};document.head.appendChild(sc);}
- else{audio.src=s.url;audio.volume=muted?0:vol;audio.load();setTimeout(()=>{audio.play().then(()=>setStatus('LIVE VIP • '+s.name,'live')).catch(()=>setStatus('Shtyp ▶ te playeri nativ lart','err'));},200);}
- document.getElementById('mainPlay').textContent='❚❚';}
-function toggleMain(){if(curIdx<0){playIdx(0);return;}const s=tracks[curIdx];if(s.kind){if(beatOn){stopBeat();document.getElementById('mainPlay').textContent='▶';}else{startBeat(s.kind,128);}return;} if(audio.paused){audio.play().catch(()=>{});document.getElementById('mainPlay').textContent='❚❚';}else{audio.pause();document.getElementById('mainPlay').textContent='▶';}}
-document.getElementById('mainPlay').onclick=toggleMain;
-document.getElementById('prevBtn').onclick=()=>{if(curIdx<0)playIdx(0);else playIdx((curIdx-1+tracks.length)%tracks.length);};
-document.getElementById('nextBtn').onclick=()=>{if(curIdx<0)playIdx(0);else playIdx((curIdx+1)%tracks.length);};
-document.getElementById('stopBtn').onclick=()=>{stopBeat();stopAudio();document.getElementById('mainPlay').textContent='▶';setStatus('STOP');document.getElementById('now').textContent='GATI • VIP';};
-document.getElementById('vipPlay').onclick=()=>playIdx(0);
-document.getElementById('vipLokale').onclick=()=>{const idx=tracks.findIndex(t=>t.genre==='Lokale');playIdx(idx);};
-document.getElementById('vipHouse').onclick=()=>{const idx=tracks.findIndex(t=>t.genre==='House');playIdx(idx);};
-document.getElementById('detailsBtn').onclick=()=>{if(curIdx>=0)alert(tracks[curIdx].name+'\n'+tracks[curIdx].desc);};
-document.getElementById('listenBtn').onclick=()=>{if(curIdx>=0)playIdx(curIdx);else playIdx(0);};
-document.getElementById('favBtn').onclick=()=>{if(curIdx<0)return;if(favs.includes(curIdx))favs=favs.filter(x=>x!==curIdx);else favs.push(curIdx);saveFavs();render();};
-document.getElementById('shareBtn').onclick=()=>{if(navigator.share)navigator.share({title:'RADIO BY SABI VIP',text:'RADIO BY SABI - VIP PREMIUM'}).catch(()=>{});};
-audio.addEventListener('playing',()=>{if(curIdx>=0)setStatus('LIVE VIP • '+tracks[curIdx].name,'live');});
-audio.addEventListener('waiting',()=>{setStatus('DUKE U LIDHUR... prit');});
-audio.addEventListener('error',()=>{if(curIdx>=0)setStatus('Nuk u hap - provo Divjaka HD','err');});
-function render(){const tabs=document.getElementById('tabs');tabs.innerHTML='';["Të Gjitha","Radio Live","Lokale","House","Latitude","★ VIP","♥ Favoritet"].forEach(g=>{const b=document.createElement('button');b.textContent=g;b.className=filter===g?'active':'';b.onclick=()=>{filter=g;render();};tabs.appendChild(b);});
- const el=document.getElementById('listEl');el.innerHTML='';tracks.forEach((s,i)=>{if(filter==='★ VIP'&&!s.vip)return;if(filter==='♥ Favoritet'&&!favs.includes(i))return;if(filter!=='Të Gjitha'&&filter!=='★ VIP'&&filter!=='♥ Favoritet'&&s.genre!==filter)return;const d=document.createElement('div');d.className='item'+(i===curIdx?' active':'');d.innerHTML='<span class="n">'+String(i+1).padStart(2,'0')+'</span><div class="info"><b>'+s.name+'</b><span>'+s.desc+'</span></div><span class="tag '+(s.vip?'':'blue')+'">'+(s.vip?'★ VIP':s.genre)+'</span><button class="play">▶</button>';d.onclick=()=>playIdx(i);el.appendChild(d);});
- const fe=document.getElementById('favEl');fe.innerHTML='';if(!favs.length)fe.innerHTML='<p style="color:#666;font-size:13px">Shtyp ♥ Favorite te një këngë.</p>';favs.forEach(fi=>{const c=document.createElement('span');c.className='chip';c.textContent=tracks[fi].name;c.onclick=()=>playIdx(fi);fe.appendChild(c);});
- const he=document.getElementById('histEl');he.innerHTML='';hist.forEach(h=>{const c=document.createElement('span');c.className='chip';c.textContent=h;c.onclick=()=>{const idx=tracks.findIndex(t=>t.name===h);if(idx>=0)playIdx(idx);};he.appendChild(c);});}
+const CFG={lokale:[55,0,65.41,0,55,0,49,58.27],lokale2:[65.41,0,55,0,65.41,0,49,0],house:[55,55,55,55,65.41,55,49,58.27],house2:[49,0,49,0,55,0,49,58.27],latitude:[55,0,0,55,65.41,0,0,49],latitude2:[55,0,55,0,65.41,0,58.27,0],beat:[55,0,55,0,65.41,0,49,58.27]};
+function beatStep(s,k){const t=actx.currentTime;const kk=actx.createOscillator(),kg=actx.createGain();kk.type='sine';kk.frequency.setValueAtTime(150,t);kk.frequency.exponentialRampToValueAtTime(48,t+0.12);kg.gain.setValueAtTime(0.9,t);kg.gain.exponentialRampToValueAtTime(0.001,t+0.28);kk.connect(kg);kg.connect(master);kk.start(t);kk.stop(t+0.3);const bf=(CFG[k]||CFG.beat)[s%8];if(bf){const b=actx.createOscillator(),fl=actx.createBiquadFilter(),bg=actx.createGain();b.type='sawtooth';b.frequency.value=bf;fl.type='lowpass';fl.frequency.value=420;bg.gain.setValueAtTime(0.0001,t);bg.gain.exponentialRampToValueAtTime(0.28,t+0.02);bg.gain.exponentialRampToValueAtTime(0.001,t+0.4);b.connect(fl);fl.connect(bg);bg.connect(master);b.start(t);b.stop(t+0.45);}}
+function startBeat(k,bpm){if(!unlocked)unlock();stopAudio();stopMood();beatOn=true;step=0;beatStep(0,k);timer=setInterval(()=>{step++;beatStep(step,k);},60000/bpm/2);document.getElementById('play').textContent='❚❚';setSt('LIVE • '+k.toUpperCase(),'live');startElapsed();}
+function playMood(m){if(!unlocked)unlock();stopBeat();stopAudio();stopMood();mood=m;document.querySelectorAll('#moods button').forEach(b=>b.classList.toggle('on',b.dataset.mood===m));setSt('MOOD • '+m.toUpperCase()+' • LIVE','live');document.getElementById('now').textContent='MOOD • '+m.toUpperCase();startElapsed();moodTimer=setInterval(()=>{if(!actx)return;const t=actx.currentTime;const s=actx.createBufferSource();s.buffer=noiseBuf;s.loop=true;const f=actx.createBiquadFilter();f.type='lowpass';f.frequency.value=m==='sea'?400:m==='rain'?1200:600;const g=actx.createGain();g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(0.12,t+0.5);s.connect(f);f.connect(g);g.connect(master);s.start(t);s.stop(t+1.2);},900);document.getElementById('play').textContent='❚❚';}
+function stopMood(){mood=null;if(moodTimer){clearInterval(moodTimer);moodTimer=null;}document.querySelectorAll('#moods button').forEach(b=>b.classList.remove('on'));}
+document.querySelectorAll('#moods button').forEach(b=>b.onclick=()=>{if(mood===b.dataset.mood){stopMood();setSt('STOP');}else playMood(b.dataset.mood);});
+document.querySelectorAll('[data-timer]').forEach(b=>b.onclick=()=>{const mins=+b.dataset.timer;if(sleepTimer)clearTimeout(sleepTimer);sleepTimer=setTimeout(()=>{stopBeat();stopAudio();stopMood();document.getElementById('play').textContent='▶';setSt('SLEEP • RADIO U FIK');document.getElementById('timerInfo').textContent='';},mins*60000);document.getElementById('timerInfo').textContent='Radio fiket pas '+mins+' minutash.';});
+document.getElementById('timerOff').onclick=()=>{if(sleepTimer)clearTimeout(sleepTimer);document.getElementById('timerInfo').textContent='Timer u anulua.';};
+function playIdx(i){const s=tracks[i];if(!s)return;cur=i;document.getElementById('bigTitle').innerHTML=s.n.toUpperCase().replace(' ','<br>');document.getElementById('bigSub').textContent=s.d;document.getElementById('now').textContent=s.n;hist.unshift(s.n);hist=[...new Set(hist)].slice(0,10);saveH();render();stopMood();stopBeat();if(s.k){startBeat(s.k,128);return;}stopAudio();setSt('DUKE U LIDHUR ME '+s.n+'... prit 5 sek');if(s.hls){const sc=document.createElement('script');sc.src='https://cdn.jsdelivr.net/npm/hls.js@latest';sc.onload=()=>{const h=new Hls();h.loadSource(s.u);h.attachMedia(audio);h.on(Hls.Events.MANIFEST_PARSED,()=>{audio.volume=vol;audio.play().then(()=>{setSt('LIVE • '+s.n,'live');startElapsed();}).catch(()=>setSt('Shtyp ▶ te playeri lart','err'));});};document.head.appendChild(sc);}else{audio.src=s.u;audio.volume=vol;audio.load();setTimeout(()=>audio.play().then(()=>{setSt('LIVE • '+s.n,'live');startElapsed();}).catch(()=>setSt('Shtyp ▶ te playeri lart','err')),200);}document.getElementById('play').textContent='❚❚';}
+function toggle(){if(cur<0&&!mood){playIdx(0);return;}if(mood){stopMood();document.getElementById('play').textContent='▶';return;}const s=tracks[cur];if(s.k){if(beatOn){stopBeat();document.getElementById('play').textContent='▶';}else{startBeat(s.k,128);}return;}if(audio.paused){audio.play();document.getElementById('play').textContent='❚❚';}else{audio.pause();document.getElementById('play').textContent='▶';}}
+document.getElementById('play').onclick=toggle;
+function nextTrack(){if(shuffle){playIdx(Math.floor(Math.random()*tracks.length));}else playIdx((cur+1)%tracks.length);}
+function prevTrack(){playIdx((cur-1+tracks.length)%tracks.length);}
+document.getElementById('next').onclick=nextTrack;document.getElementById('prev').onclick=prevTrack;
+document.getElementById('shuffleBtn').onclick=()=>{shuffle=!shuffle;document.getElementById('shuffleBtn').textContent=shuffle?'🔀 SHUFFLE: ON':'🔀 SHUFFLE';};
+document.getElementById('repeatBtn').onclick=()=>{repeat=!repeat;document.getElementById('repeatBtn').textContent=repeat?'↻ REPEAT: ON':'↻ REPEAT: OFF';};
+document.getElementById('volBtn').onclick=()=>{vol=vol>=0.9?0.5:vol>=0.5?0.2:0.9;audio.volume=vol;document.getElementById('volBtn').textContent='VOL: '+Math.round(vol*100)+'%';};
+document.getElementById('stop').onclick=()=>{stopBeat();stopAudio();stopMood();document.getElementById('play').textContent='▶';setSt('STOP');document.getElementById('now').textContent='GATI • SABI BLACK';if(elapsedTimer)clearInterval(elapsedTimer);};
+document.getElementById('detailsBtn').onclick=()=>{if(cur>=0)alert(tracks[cur].n+'\n'+tracks[cur].d+'\nSABI BLACK • ALL IN');};
+document.getElementById('listenBtn').onclick=()=>{if(cur>=0)playIdx(cur);else playIdx(0);};
+document.getElementById('favBtn').onclick=()=>{if(cur<0)return;if(favs.includes(cur))favs=favs.filter(x=>x!==cur);else favs.push(cur);saveF();render();};
+document.getElementById('shareBtn').onclick=()=>{if(navigator.share)navigator.share({title:'SABI BLACK',text:'SABI BLACK — RADIO BY SABI'}).catch(()=>{});};
+document.getElementById('searchBtn').onclick=()=>{searchQ=document.getElementById('search').value.toLowerCase();render();};
+document.getElementById('search').addEventListener('input',e=>{searchQ=e.target.value.toLowerCase();render();});
+audio.addEventListener('playing',()=>{if(cur>=0)setSt('LIVE • '+tracks[cur].n,'live');});
+audio.addEventListener('ended',()=>{if(repeat)playIdx(cur);else nextTrack();});
+audio.addEventListener('error',()=>{if(cur>=0)setSt('Nuk u hap — provo Divjaka HD','err');});
+function render(){const tabs=document.getElementById('tabs');tabs.innerHTML='';["Të Gjitha","Radio Live","Lokale","House","Latitude","♥ Favoritet"].forEach(g=>{const b=document.createElement('button');b.textContent=g;b.className=filter===g?'on':'';b.onclick=()=>{filter=g;render();};tabs.appendChild(b);});
+const el=document.getElementById('list');el.innerHTML='';tracks.forEach((s,i)=>{if(searchQ&&!s.n.toLowerCase().includes(searchQ)&&!s.d.toLowerCase().includes(searchQ))return;if(filter==='♥ Favoritet'&&!favs.includes(i))return;if(filter!=='Të Gjitha'&&filter!=='♥ Favoritet'&&s.g!==filter)return;const d=document.createElement('div');d.className='item'+(i===cur?' on':'');d.innerHTML='<div class="num">'+String(i+1).padStart(2,'0')+'</div><div class="info"><b>'+s.n+'</b><span>'+s.d+'</span></div><button class="go">▶</button>';d.onclick=()=>playIdx(i);el.appendChild(d);});
+const fe=document.getElementById('favEl');fe.innerHTML='';if(!favs.length)fe.innerHTML='<p style="color:#666;font-size:13px">Shtyp ♥ FAVORITE.</p>';favs.forEach(fi=>{const c=document.createElement('span');c.className='chip';c.textContent=tracks[fi].n;c.onclick=()=>playIdx(fi);fe.appendChild(c);});
+const he=document.getElementById('histEl');he.innerHTML='';hist.forEach(h=>{const c=document.createElement('span');c.className='chip';c.textContent=h;c.onclick=()=>{const idx=tracks.findIndex(t=>t.n===h);if(idx>=0)playIdx(idx);};he.appendChild(c);});}
+// API - RADIO BROWSER
+async function loadApi(){document.getElementById('apiInfo').textContent='Duke ngarkuar nga API...';try{const r=await fetch('https://de1.api.radio-browser.info/json/stations/bycountry/Albania?order=clickcount&reverse=true&hidebroken=true&limit=20');const data=await r.json();const el=document.getElementById('apiList');el.innerHTML='';let added=0;data.forEach(st=>{if(!st.url_resolved)return;if(tracks.some(t=>t.u===st.url_resolved))return;tracks.push({n:st.name.slice(0,30),d:'API LIVE • '+(st.tags||'Radio').slice(0,30),g:"Radio Live",u:st.url_resolved});added++;});document.getElementById('apiInfo').textContent='✓ U shtuan '+added+' radio nga API!';render();}catch(e){document.getElementById('apiInfo').textContent='API nuk u hap — përdoret lista e sigurt.';}}
+document.getElementById('loadApiBtn').onclick=loadApi;document.getElementById('apiTop').onclick=()=>{document.querySelector('.api-box').scrollIntoView({behavior:'smooth'});loadApi();};document.getElementById('refreshApi').onclick=loadApi;
+// API - MOTI TIRANA
+async function loadWeather(){try{const r=await fetch('https://api.open-meteo.com/v1/forecast?latitude=41.3275&longitude=19.8187&current=temperature_2m,relative_humidity_2m,weather_code,wind_speed_10m');const d=await r.json();const c=d.current;document.getElementById('weather').innerHTML='Tirana tani: <b style="color:#fff;font-size:18px">'+c.temperature_2m+'°C</b> • Lagështi '+c.relative_humidity_2m+'% • Era '+c.wind_speed_10m+' km/h • Kod moti: '+c.weather_code+' • Live nga Open-Meteo API';}catch(e){document.getElementById('weather').textContent='Moti nuk u ngarkua — kontrollo internetin.';}}
+document.getElementById('weatherBtn').onclick=loadWeather;loadWeather();
+// ORA
+function tick(){const now=new Date();document.getElementById('clock').textContent=now.toLocaleTimeString('sq-AL',{hour:'2-digit',minute:'2-digit',second:'2-digit'});document.getElementById('dateLine').textContent=now.toLocaleDateString('sq-AL',{weekday:'long',day:'numeric',month:'long',year:'numeric'});}setInterval(tick,1000);tick();
+// PANORAMA
+const panos=["Natë e qetë në Tiranë. SABI BLACK — all in.","Deti, era dhe dritat e qytetit. Relaks.","Shi në Tiranë, muzikë në sfond. SABI BLACK.","Zjarri, nata, qetësia. Frymë thellë."];let pi=0;document.getElementById('panoBtn').onclick=()=>{pi=(pi+1)%panos.length;document.getElementById('panoTxt').textContent=panos[pi];};
 render();
 </script><script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body></html>
