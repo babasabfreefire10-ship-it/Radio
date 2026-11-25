@@ -1,97 +1,91 @@
-<html lang="sq"><style>* { -webkit-text-size-adjust: 95.33333333333333% !important; }</style><head><style>
-@font-face {
-  font-family: "Optimistic";
-  font-style: normal;
-  font-weight: 400 600;
-  font-display: swap;
-  src: url("/fonts/OptimisticAI_VF_Optimized.woff2") format("woff2");
-}
-@font-face {
-  font-family: "Optimistic Mono";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("/fonts/OptimisticMono_W_TextRegular.woff2") format("woff2");
-}
-:where(html) {
-  font-family: "Optimistic", system-ui, sans-serif;
-}
-:where(code, pre, kbd, samp) {
-  font-family: "Optimistic Mono", ui-monospace, monospace;
-}
-</style><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SABI BY SABI - Radio</title>
+<!DOCTYPE html>
+<html lang="sq"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#000000"><title>RADIO BY SABI</title>
 <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 <style>
-*{box-sizing:border-box}body{margin:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;padding-bottom:120px}
-.led{height:3px;background:#7a0000;box-shadow:0 0 10px rgba(122,0,0,.5)} .led.off{background:#111;box-shadow:none}
-header{padding:18px 14px;border-bottom:1px solid #ff0000}.logo{font-size:38px;font-weight:900;letter-spacing:1px}.logo span{color:#f00}
-.sub{color:#f00;font-size:11px;letter-spacing:3px;font-weight:800}.row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-button{cursor:pointer;border:1px solid #f00;background:#000;color:#fff;padding:12px 16px;font-weight:800;font-size:15px}
-button.red{background:#f00;color:#000}button:active{transform:scale(.96)}
-main{max-width:900px;margin:0 auto;padding:14px}
-.card{border:2px solid #f00;background:#140000;padding:20px;margin-top:16px}
-.card h2{margin:0;font-size:30px}.small{color:#bbb;font-size:13px;margin-top:8px}
-.station{border:1px solid #333;padding:14px;display:flex;gap:10px;align-items:center;margin-top:10px;background:#050505}
-.station.active{border-color:#f00;background:#1a0000}.st-info{flex:1;min-width:0}.st-info b{font-size:19px;display:block}.st-info span{color:#999;font-size:13px}
-.err{color:#ff6b6b;font-size:13px;font-weight:700;margin-top:10px;display:none}
-.bar{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:2px solid #f00;padding:12px 14px;display:flex;gap:10px;align-items:center}
-.bar b{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-input[type=range]{width:110px} .live{color:#f00;font-weight:900}
-.eq{display:flex;gap:4px;align-items:flex-end;height:22px}.eq i{display:block;width:4px;background:#f00;height:8px}
-.eq.on i{animation:eq .4s infinite alternate}.eq.on i:nth-child(2){animation-delay:.1s}.eq.on i:nth-child(3){animation-delay:.2s}
-@keyframes eq{from{height:6px}to{height:22px}}
-</style></head>
-<body>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{touch-action:manipulation;overscroll-behavior:none}
+body{margin:0;background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;overflow-x:hidden;padding-bottom:110px}
+.led{height:2px;background:#111}.led.on{background:#c00000}
+header{padding:14px 16px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a1a}
+.logo{display:flex;gap:10px;align-items:center}.badge{width:44px;height:44px;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:24px;font-weight:900;position:relative}.badge i{position:absolute;right:5px;bottom:4px;width:7px;height:7px;background:#c00000;border-radius:50%}
+.lt .a{font-size:22px;font-weight:900}.lt .a em{font-style:normal;color:#c00000}.lt .b{font-size:9px;letter-spacing:3.5px;color:#888;font-weight:800;margin-top:4px}
+button{cursor:pointer;background:#111;color:#fff;border:1px solid #333;padding:10px 14px;font-weight:800;border-radius:999px;font-size:13px;touch-action:manipulation}
+button:active{transform:scale(.97)}button.active{background:#fff;color:#000;border-color:#fff}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:12px 16px;scrollbar-width:none}.tabs::-webkit-scrollbar{display:none}.tabs button{flex:0 0 auto}
+.player{padding:20px 16px 6px;max-width:920px;margin:0 auto}.kicker{font-size:11px;letter-spacing:3px;color:#888;font-weight:800}
+h1{font-size:clamp(46px,13vw,92px);line-height:.88;font-weight:900;margin:10px 0 0;text-transform:uppercase;word-break:break-word}h1 span{color:#c00000}
+.sub{color:#c00000;font-weight:900;letter-spacing:2px;margin-top:10px;font-size:14px}.meta{color:#999;font-size:13px;margin-top:6px}
+.progress{display:flex;align-items:center;gap:10px;margin-top:20px}.t{font-size:12px;color:#999;width:38px}.track{flex:1;height:4px;background:#222;border-radius:99px;overflow:hidden}.fill{height:100%;width:0%;background:#2b7fff}
+.controls{display:flex;justify-content:center;align-items:center;gap:22px;margin-top:20px}.ctrl{width:52px;height:52px;border-radius:50%;background:#000;color:#fff;font-size:20px}.play-big{width:78px;height:78px;border-radius:50%;background:#fff;color:#000;border:none;font-size:30px}
+.row2{display:flex;justify-content:center;gap:10px;margin-top:14px}
+.list{max-width:920px;margin:14px auto 0;padding:0 16px}.item{display:flex;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid #1a1a1a;cursor:pointer}.item.active{background:#0a0000}.item .n{color:#666;font-size:13px;width:22px}.item .info{flex:1;min-width:0}.item .info b{font-size:18px;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.item .info span{color:#888;font-size:12px}.tag{font-size:10px;border:1px solid #333;padding:3px 7px;border-radius:99px;color:#aaa}.play{width:44px;height:44px;border-radius:50%;background:#fff;color:#000;border:none;font-size:18px;flex:0 0 44px}
+.bar{position:fixed;bottom:0;left:0;right:0;background:#000;border-top:1px solid #222;padding:10px 14px;display:flex;gap:10px;align-items:center;padding-bottom:max(10px,env(safe-area-inset-bottom))}.bar b{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:13px}.bar small{color:#888}
+</style></head><body>
 <div class="led" id="led"></div>
-<header><div class="logo">SABI <span>BY SABI</span></div><div class="sub">SABI BY SABI • MUZIKË SHQIP • LIVE • BLACK HORROR</div>
-<div class="row"><button id="ledBtn">LED OFF</button><button id="testBtn">🔊 TESTO ZËRIN</button></div></header>
-<main>
-<div class="card"><h2>🎧 SABI BEAT — Luaj Tani</h2><p class="small">Beat i bërë në telefonin tënd, pa internet. Shtyp PLAY, duhet të dëgjosh kick + bas menjëherë. Nëse s'dëgjon, rrit volumin e telefonit.</p>
-<div class="row"><button class="red" id="beatBtn" style="font-size:20px;padding:16px 28px">▶ PLAY SABI BEAT</button><span id="beatStatus" style="align-self:center;font-weight:800">GATI</span></div>
-<div class="eq" id="eq"><i></i><i></i><i></i><i></i><i></i></div></div>
-
-<div class="card"><h2>📻 RADIOT LIVE</h2><p class="small">Shtyp PLAY te një radio. Nëse njëra nuk hapet, provo tjetrën — mos e mbyll faqen. RTSH përdor HLS, Zeno përdor MP3.</p><div id="list"><div class="station"><div class="st-info"><b>Radio Tirana 1</b><span>RTSH • Lajme / Pop • Shqipëri</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div><div class="station"><div class="st-info"><b>Radio Tirana 2</b><span>RTSH • Shqipëri</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div><div class="station"><div class="st-info"><b>Radio Tirana 3</b><span>RTSH • Shqipëri</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div><div class="station"><div class="st-info"><b>Radio Tirana Klasik</b><span>RTSH • Klasik</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div><div class="station"><div class="st-info"><b>Radio Divjaka HD</b><span>Zeno • Pop / Dance / Folk</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div><div class="station"><div class="st-info"><b>Albanian Baby Radio</b><span>Zeno • Family</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div><div class="station"><div class="st-info"><b>Radio BLLACA</b><span>Zeno • Lokale • Kosovë</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div><div class="station"><div class="st-info"><b>ABC Red FM</b><span>Zeno • Pop</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div><div class="station"><div class="st-info"><b>HM Radio</b><span>Zeno • Folk</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button></div></div><p class="err" id="globalErr"></p></div>
-</main>
-<div class="bar"><b><span id="now">GATI</span><br><span class="live" id="st">STOP</span></b><button id="stopBtn">⏹ STOP</button></div>
-<audio id="audio" preload="auto" playsinline=""></audio>
+<header><div class="logo"><div class="badge">S<i></i></div><div class="lt"><div class="a">RADIO <em>BY SABI</em></div><div class="b">SABI BY SABI</div></div></div><button id="ledBtn">LED OFF</button></header>
+<div class="tabs" id="tabs"></div>
+<section class="player"><div class="kicker" id="kicker">SABI BY SABI • LIVE</div><h1 id="bigTitle">RADIO<br><span>BY SABI</span></h1><div class="sub" id="bigSub">ZGJIDH NJE KENGE</div><div class="meta" id="bigMeta">Lokale • House • Latitude • Radio Live</div>
+<div class="progress"><span class="t" id="t0">0:00</span><div class="track"><div class="fill" id="fill"></div></div><span class="t">LIVE</span></div>
+<div class="controls"><button class="ctrl" id="prevBtn">‹</button><button class="play-big" id="mainPlay">▶</button><button class="ctrl" id="nextBtn">›</button></div>
+<div class="row2"><button id="detailsBtn">Details</button><button id="listenBtn">Listen</button></div></section>
+<div class="list" id="listEl"></div>
+<div class="bar"><b><span id="now">GATI</span><br><small id="st">SHTYP PLAY</small></b><button id="stopBtn">STOP</button></div>
+<audio id="audio" preload="auto" playsinline></audio>
 <script>
-const stations=[
- {name:"Radio Tirana 1",desc:"RTSH • Lajme / Pop • Shqipëri",url:"https://radiolive.rtsh.dev/radiotirana1",hls:true},
- {name:"Radio Tirana 2",desc:"RTSH • Shqipëri",url:"https://radiolive.rtsh.dev/radiotirana2",hls:true},
- {name:"Radio Tirana 3",desc:"RTSH • Shqipëri",url:"https://radiolive.rtsh.dev/radiotirana3",hls:true},
- {name:"Radio Tirana Klasik",desc:"RTSH • Klasik",url:"https://radiolive.rtsh.dev/radiotiranaklasik1",hls:true},
- {name:"Radio Divjaka HD",desc:"Zeno • Pop / Dance / Folk",url:"https://stream.zeno.fm/brc5btguqg8uv",hls:false},
- {name:"Albanian Baby Radio",desc:"Zeno • Family",url:"https://stream.zeno.fm/d6v0xkba04zuv",hls:false},
- {name:"Radio BLLACA",desc:"Zeno • Lokale • Kosovë",url:"https://stream.zeno.fm/0smrlmhdbxuuv",hls:false},
- {name:"ABC Red FM",desc:"Zeno • Pop",url:"https://stream.zeno.fm/uq9wmejy9hytv",hls:false},
- {name:"HM Radio",desc:"Zeno • Folk",url:"https://stream.zeno.fm/1nykd3t9f7qtv",hls:false},
+const GENRES=["Të Gjitha","Lokale","House","Latitude","Radio Live"];
+const tracks=[
+ {name:"LOKALE",desc:"TALLAVA • AHENG • 140 BPM",genre:"Lokale",kind:"lokale"},
+ {name:"LOKALE 2",desc:"TALLAVA • DASËM • 138 BPM",genre:"Lokale",kind:"lokale2"},
+ {name:"HOUSE",desc:"HOUSE • CLUB • 128 BPM",genre:"House",kind:"house"},
+ {name:"HOUSE 2",desc:"DEEP HOUSE • 122 BPM",genre:"House",kind:"house2"},
+ {name:"LATITUDE",desc:"MELODIC HOUSE • LATITUDE",genre:"Latitude",kind:"latitude"},
+ {name:"LATITUDE 2",desc:"MELODIC • BOUNCE",genre:"Latitude",kind:"latitude2"},
+ {name:"SABI BEAT",desc:"SABI BY SABI • BOUNCE",genre:"House",kind:"beat"},
+ {name:"Radio Tirana 1",desc:"RTSH • Lajme / Pop",genre:"Radio Live",kind:"radio",url:"https://radiolive.rtsh.dev/radiotirana1",hls:true},
+ {name:"Radio Tirana 2",desc:"RTSH",genre:"Radio Live",kind:"radio",url:"https://radiolive.rtsh.dev/radiotirana2",hls:true},
+ {name:"Radio Divjaka HD",desc:"Pop / Dance / Folk",genre:"Radio Live",kind:"radio",url:"https://stream.zeno.fm/brc5btguqg8uv",hls:false},
+ {name:"Radio BLLACA",desc:"Lokale",genre:"Radio Live",kind:"radio",url:"https://stream.zeno.fm/0smrlmhdbxuuv",hls:false},
+ {name:"HM Radio",desc:"Folk",genre:"Radio Live",kind:"radio",url:"https://stream.zeno.fm/1nykd3t9f7qtv",hls:false},
 ];
-const audio=document.getElementById('audio');let hls=null,current=null;
-// --- LED ---
-let ledOn=true;document.getElementById('ledBtn').onclick=()=>{ledOn=!ledOn;document.getElementById('led').className=ledOn?'led':'led off';document.getElementById('ledBtn').textContent=ledOn?'LED OFF':'LED ON';};
-// --- SABI BEAT (Web Audio, punon pa internet) ---
-let actx=null,beatTimer=null,beatOn=false,master=null,noiseBuf=null;
-function ensureCtx(){if(!actx){const C=window.AudioContext||window.webkitAudioContext;actx=new C();master=actx.createGain();master.gain.value=0.9;master.connect(actx.destination);const len=Math.floor(actx.sampleRate*0.08);noiseBuf=actx.createBuffer(1,len,actx.sampleRate);const d=noiseBuf.getChannelData(0);for(let i=0;i<len;i++)d[i]=Math.random()*2-1;} if(actx.state==='suspended') actx.resume(); return actx;}
-let step=0;const bassPat=[55,0,55,0,65.41,0,49,58.27];
-function playStep(s){const ctx=actx,t=ctx.currentTime;
- const k=ctx.createOscillator(),kg=ctx.createGain();k.type='sine';k.frequency.setValueAtTime(150,t);k.frequency.exponentialRampToValueAtTime(50,t+0.12);kg.gain.setValueAtTime(0.9,t);kg.gain.exponentialRampToValueAtTime(0.001,t+0.28);k.connect(kg);kg.connect(master);k.start(t);k.stop(t+0.3);
- const h=ctx.createBufferSource();h.buffer=noiseBuf;const f=ctx.createBiquadFilter();f.type='highpass';f.frequency.value=6000;const hg=ctx.createGain();hg.gain.setValueAtTime(s%2?0.22:0.1,t);hg.gain.exponentialRampToValueAtTime(0.001,t+0.05);h.connect(f);f.connect(hg);hg.connect(master);h.start(t);h.stop(t+0.06);
- const bf=bassPat[s%8];if(bf>0){const b=ctx.createOscillator(),bf2=ctx.createBiquadFilter(),bg=ctx.createGain();b.type='sawtooth';b.frequency.value=bf;bf2.type='lowpass';bf2.frequency.value=420;bg.gain.setValueAtTime(0.0001,t);bg.gain.exponentialRampToValueAtTime(0.28,t+0.02);bg.gain.exponentialRampToValueAtTime(0.001,t+0.42);b.connect(bf2);bf2.connect(bg);bg.connect(master);b.start(t);b.stop(t+0.45);} }
-function startBeat(){stopAudio();ensureCtx();beatOn=true;step=0;playStep(0);beatTimer=setInterval(()=>{step++;playStep(step);},500);document.getElementById('beatBtn').textContent='⏹ STOP SABI BEAT';document.getElementById('beatStatus').textContent='LIVE • SABI BEAT';document.getElementById('eq').className='eq on';document.getElementById('now').textContent='SABI BEAT';document.getElementById('st').textContent='LIVE • SABI BEAT';}
-function stopBeat(){beatOn=false;if(beatTimer){clearInterval(beatTimer);beatTimer=null;}document.getElementById('beatBtn').textContent='▶ PLAY SABI BEAT';document.getElementById('beatStatus').textContent='GATI';document.getElementById('eq').className='eq';}
-document.getElementById('beatBtn').onclick=()=>{if(beatOn){stopBeat();document.getElementById('st').textContent='GATI';document.getElementById('now').textContent='GATI';}else startBeat();};
-// --- TEST ZËRI: 3 beep të fortë, garantuar ---
-document.getElementById('testBtn').onclick=()=>{ensureCtx();const ctx=actx;for(let i=0;i<3;i++){const t=ctx.currentTime+i*0.35;const o=ctx.createOscillator(),g=ctx.createGain();o.type='square';o.frequency.value=880;g.gain.setValueAtTime(0.5,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.25);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.26);}document.getElementById('now').textContent='TEST ZËRI — duhet të dëgjosh 3 beep';document.getElementById('st').textContent='TEST';};
-// --- RADIO ---
-function stopAudio(){try{audio.pause();}catch(e){} if(hls){try{hls.destroy();}catch(e){} hls=null;} }
-function playStation(s,btn){stopBeat();stopAudio();current=s;document.getElementById('globalErr').style.display='none';document.querySelectorAll('.station').forEach(e=>e.classList.remove('active'));if(btn)btn.closest('.station').classList.add('active');
- document.getElementById('now').textContent=s.name;document.getElementById('st').textContent='DUKE U LIDHUR... prit 5-10 sekonda';
- if(s.hls && window.Hls && Hls.isSupported()){hls=new Hls({maxBufferLength:10});hls.loadSource(s.url);hls.attachMedia(audio);hls.on(Hls.Events.MANIFEST_PARSED,()=>{audio.play().catch(()=>{});});hls.on(Hls.Events.ERROR,(e,d)=>{if(d.fatal){document.getElementById('st').textContent='Nuk u hap - provo tjetrën';}});}
- else{audio.src=s.url;audio.load();audio.play().catch(()=>{document.getElementById('st').textContent='Shtyp prap PLAY';});}}
-audio.addEventListener('playing',()=>{document.getElementById('st').textContent='LIVE • SIGNAL 100%';});
-audio.addEventListener('error',()=>{if(current)document.getElementById('st').textContent='Nuk u hap - provo tjetrën';});
-document.getElementById('stopBtn').onclick=()=>{stopBeat();stopAudio();document.getElementById('now').textContent='GATI';document.getElementById('st').textContent='STOP';};
-const list=document.getElementById('list');
-stations.forEach(s=>{const d=document.createElement('div');d.className='station';d.innerHTML='<div class="st-info"><b>'+s.name+'</b><span>'+s.desc+'</span></div><button class="red">▶ PLAY</button><button class="out">↗ Hape</button>';const playBtn=d.querySelector('.red');playBtn.onclick=()=>playStation(s,playBtn);d.querySelector('.out').onclick=()=>window.open(s.url,'_blank');list.appendChild(d);});
-</script><script>(function(){var loc=location.href.replace(/#.*$/,"");var ATTR_NAMES=["data-product-id","data-productid","data-product_id","product-id","productid","product_id","data-source-entity-id","source-entity-id","source_entity_id","data-product","data-metadata","data-meta"];var DATASET_KEYS=["productId","productid","product_id","sourceEntityId","sourceentityid","source_entity_id","product","metadata","meta"];function readProductId(value){if(typeof value!=="string"||value.length===0)return null;if(/^[0-9]{6,}$/.test(value))return value;var match=value.match(/(?:product(?:_|-)?id|source(?:_|-)?entity(?:_|-)?id)["'=:\s]+([0-9]{6,})/i);return match?match[1]:null}function extractProductId(start){for(var node=start;node&&node!==document.body;node=node.parentElement){for(var i=0;i<ATTR_NAMES.length;i++){var attrValue=node.getAttribute&&node.getAttribute(ATTR_NAMES[i]);var attrProductId=readProductId(attrValue);if(attrProductId)return attrProductId}var dataset=node.dataset||null;if(dataset){for(var j=0;j<DATASET_KEYS.length;j++){var dataValue=dataset[DATASET_KEYS[j]];var dataProductId=readProductId(dataValue);if(dataProductId)return dataProductId}}}return null}function isInlineMediaSlotElement(node){return !!(node&&node.getAttribute&&node.getAttribute("data-clippy-inline-media-slot")!==null)}function findInlineMediaSlot(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(isInlineMediaSlotElement(node))return node}return null}function readInlineMediaUrl(node){if(!node)return null;return node.getAttribute&&((node.getAttribute("data-clippy-inline-media-url")||node.getAttribute("data-url")||node.getAttribute("data_url")))||node.href||null}function stripHash(url){return String(url).replace(/#.*$/,"")}function urlsMatch(a,b){if(!a||!b)return false;try{return stripHash(new URL(a,loc).href)===stripHash(new URL(b,loc).href)}catch(_){return stripHash(a)===stripHash(b)}}function isFirstPartyReelUrl(value){try{var url=new URL(value,loc);if(url.protocol!=="https:")return false;var host=url.hostname.toLowerCase();var supported=host==="instagram.com"||host.endsWith(".instagram.com")||host==="facebook.com"||host.endsWith(".facebook.com");return supported&&/\/reels?\//i.test(url.pathname)}catch(_){return false}}function isInlineMediaUrlClick(node,href){var slot=findInlineMediaSlot(node);if(!slot)return false;var slotUrl=readInlineMediaUrl(slot);if(slotUrl)return urlsMatch(href,slotUrl);return isFirstPartyReelUrl(href)}function findDataHref(start){for(var node=start;node&&node!==document.body;node=node.parentElement){if(node.getAttribute){var href=node.getAttribute("data-href")||node.getAttribute("data-url");if(href)return{href:href,node:node}}}return null}var nativeOpen=window.open;window.open=function(url){if(parent!==window&&typeof url==="string"&&/^https?:\/\//.test(url)){parent.postMessage({type:"ecto:usercontent-link-click",href:url},"*");return null}return nativeOpen?nativeOpen.apply(window,arguments):null};document.addEventListener("click",function(e){var target=e.target instanceof Element?e.target:null;if(!target)return;if(parent===window)return;var a=target.closest?target.closest("a[href]"):null;if(a&&a.href&&/^https?:\/\//.test(a.href)&&a.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(a,a.href))return;var productId=extractProductId(target)||extractProductId(a);if(productId){e.preventDefault();parent.postMessage({type:"ecto-artifact-link-click",productId:productId},"*");return}e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:a.href},"*");return}var dataHref=findDataHref(target);if(dataHref&&/^https?:\/\//.test(dataHref.href)&&dataHref.href.replace(/#.*$/,"")!==loc){if(isInlineMediaUrlClick(dataHref.node,dataHref.href))return;e.preventDefault();parent.postMessage({type:"ecto:usercontent-link-click",href:dataHref.href},"*")}},true)})();</script><script>(function(){var FOCUS_TYPE="ecto:artifact-focus-request";var CLOSE_TYPE="ecto:artifact-close-request";function focusArtifactDocument(){var body=document.body;if(!body)return;try{window.focus();}catch(e){}if(!body.hasAttribute("tabindex"))body.setAttribute("tabindex","-1");try{body.focus({preventScroll:true});}catch(e){try{body.focus();}catch(e2){}}}window.addEventListener("message",function(event){if(event.source!==window.parent)return;var data=event.data;if(!data||typeof data!=="object"||data.type!==FOCUS_TYPE)return;if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",focusArtifactDocument,{once:true});return;}focusArtifactDocument();});window.addEventListener("keydown",function(event){if(event.key!=="Escape")return;window.setTimeout(function(){if(event.defaultPrevented)return;window.parent.postMessage({type:CLOSE_TYPE},"*");},0);});})();</script></body></html>
+let filter="Të Gjitha",curIdx=-1;
+document.addEventListener('dblclick',e=>e.preventDefault(),{passive:false});
+document.addEventListener('gesturestart',e=>e.preventDefault());
+document.addEventListener('touchmove',e=>{if(e.scale&&e.scale!==1)e.preventDefault();},{passive:false});
+let lastTouch=0;document.addEventListener('touchend',e=>{const n=Date.now();if(n-lastTouch<300)e.preventDefault();lastTouch=n;},{passive:false});
+const audio=document.getElementById('audio');let hls=null;
+let ledOn=false;document.getElementById('ledBtn').onclick=()=>{ledOn=!ledOn;document.getElementById('led').className=ledOn?'led on':'led';document.getElementById('ledBtn').textContent=ledOn?'LED OFF':'LED ON';};
+let actx=null,master=null,noiseBuf=null,timer=null,step=0,beatOn=false,curKind="";
+function ctx(){if(!actx){const C=window.AudioContext||window.webkitAudioContext;actx=new C();master=actx.createGain();master.gain.value=0.9;master.connect(actx.destination);const len=Math.floor(actx.sampleRate*0.08);noiseBuf=actx.createBuffer(1,len,actx.sampleRate);const d=noiseBuf.getChannelData(0);for(let i=0;i<len;i++)d[i]=Math.random()*2-1;} if(actx.state==='suspended')actx.resume(); return actx;}
+function kick(t,vol=0.9){const o=actx.createOscillator(),g=actx.createGain();o.type='sine';o.frequency.setValueAtTime(150,t);o.frequency.exponentialRampToValueAtTime(48,t+0.12);g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.28);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.3);}
+function hat(t,vol=0.12){const s=actx.createBufferSource();s.buffer=noiseBuf;const f=actx.createBiquadFilter();f.type='highpass';f.frequency.value=6000;const g=actx.createGain();g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.05);s.connect(f);f.connect(g);g.connect(master);s.start(t);s.stop(t+0.06);}
+function bass(t,freq,vol=0.28,dur=0.4){const o=actx.createOscillator(),fl=actx.createBiquadFilter(),g=actx.createGain();o.type='sawtooth';o.frequency.value=freq;fl.type='lowpass';fl.frequency.value=420;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+0.02);g.gain.exponentialRampToValueAtTime(0.001,t+dur);o.connect(fl);fl.connect(g);g.connect(master);o.start(t);o.stop(t+dur+0.05);}
+function lead(t,freq,vol=0.14){const o=actx.createOscillator(),g=actx.createGain();o.type='triangle';o.frequency.value=freq;g.gain.setValueAtTime(0.0001,t);g.gain.exponentialRampToValueAtTime(vol,t+0.03);g.gain.exponentialRampToValueAtTime(0.001,t+0.35);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.4);}
+function darbuka(t){const o=actx.createOscillator(),g=actx.createGain();o.type='sine';o.frequency.setValueAtTime(280,t);o.frequency.exponentialRampToValueAtTime(90,t+0.09);g.gain.setValueAtTime(0.5,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.14);o.connect(g);g.connect(master);o.start(t);o.stop(t+0.15);}
+const CFG={lokale:{bpm:140,bass:[55,0,65.41,0,55,0,49,58.27],lead:[220,261.63,329.63,261.63,196,220,246.94,220]},lokale2:{bpm:138,bass:[65.41,0,55,0,65.41,0,49,0],lead:[329.63,293.66,261.63,293.66,329.63,392,329.63,261.63]},house:{bpm:128,bass:[55,55,55,55,65.41,55,49,58.27],lead:[0,0,440,0,0,0,523.25,0]},house2:{bpm:122,bass:[49,0,49,0,55,0,49,58.27],lead:[0,392,0,440,0,392,0,329.63]},latitude:{bpm:124,bass:[55,0,0,55,65.41,0,0,49],lead:[440,523.25,659.25,523.25,440,392,440,523.25]},latitude2:{bpm:126,bass:[55,0,55,0,65.41,0,58.27,0],lead:[523.25,659.25,587.33,659.25,783.99,659.25,587.33,523.25]},beat:{bpm:132,bass:[55,0,55,0,65.41,0,49,58.27],lead:[0,0,0,0,0,0,0,0]}};
+function playStep(s,kind){const c=CFG[kind]||CFG.beat;const t=actx.currentTime;
+ if(kind.includes('lokale')||kind==='lokale2'){if(s%2===0)kick(t,0.9);darbuka(t);if(s%4===2)darbuka(t+0.08);hat(t,0.08);}
+ else{kick(t,0.95);hat(t,s%2?0.18:0.08);if(s%4===2){const cl=actx.createBufferSource();cl.buffer=noiseBuf;const f=actx.createBiquadFilter();f.type='bandpass';f.frequency.value=1800;const g=actx.createGain();g.gain.setValueAtTime(0.25,t);g.gain.exponentialRampToValueAtTime(0.001,t+0.09);cl.connect(f);f.connect(g);g.connect(master);cl.start(t);cl.stop(t+0.1);}}
+ const bf=c.bass[s%8];if(bf)bass(t,bf); const lf=c.lead[s%8];if(lf)lead(t,lf);
+ document.getElementById('fill').style.width=(s%16)*6.25+'%';}
+function startGen(kind){stopAudio();ctx();curKind=kind;beatOn=true;step=0;playStep(0,kind);const interval=60000/CFG[kind].bpm/2;timer=setInterval(()=>{step++;playStep(step,kind);},interval);document.getElementById('mainPlay').textContent='❚❚';document.getElementById('st').textContent='LIVE • '+kind.toUpperCase();}
+function stopGen(){beatOn=false;if(timer){clearInterval(timer);timer=null;}}
+function stopAudio(){try{audio.pause();}catch(e){} if(hls){try{hls.destroy();}catch(e){} hls=null;}}
+function visible(){return tracks.map((t,i)=>({t,i})).filter(x=>filter==="Të Gjitha"||x.t.genre===filter);}
+function playIdx(i){const s=tracks[i];curIdx=i;document.getElementById('bigTitle').innerHTML=s.name.toUpperCase().replace(' ','<br>');document.getElementById('bigSub').textContent=s.desc;document.getElementById('bigMeta').textContent=s.genre+' • '+s.desc;document.getElementById('now').textContent=s.name;document.getElementById('st').textContent='DUKE U LIDHUR...';document.getElementById('fill').style.width='0%';render();
+ stopGen();stopAudio();if(s.kind==='radio'){if(s.hls&&window.Hls&&Hls.isSupported()){hls=new Hls({maxBufferLength:10});hls.loadSource(s.url);hls.attachMedia(audio);hls.on(Hls.Events.MANIFEST_PARSED,()=>{audio.volume=1;audio.play().catch(()=>{});});hls.on(Hls.Events.ERROR,(e,d)=>{if(d.fatal)document.getElementById('st').textContent='Nuk u hap - provo tjetrën';});}else{audio.src=s.url;audio.volume=1;audio.load();audio.play().catch(()=>{});}document.getElementById('mainPlay').textContent='❚❚';}else{startGen(s.kind);}}
+function toggleMain(){if(curIdx<0){playIdx(0);return;}const s=tracks[curIdx];if(s.kind==='radio'){if(audio.paused){audio.play().catch(()=>{});document.getElementById('mainPlay').textContent='❚❚';}else{audio.pause();document.getElementById('mainPlay').textContent='▶';document.getElementById('st').textContent='PAUSE';}}else{if(beatOn){stopGen();document.getElementById('mainPlay').textContent='▶';document.getElementById('st').textContent='PAUSE';}else{startGen(s.kind);}}}
+document.getElementById('mainPlay').onclick=toggleMain;
+document.getElementById('prevBtn').onclick=()=>{const v=visible();if(!v.length)return;let p=v.findIndex(x=>x.i===curIdx);playIdx(v[(p-1+v.length)%v.length].i);};
+document.getElementById('nextBtn').onclick=()=>{const v=visible();if(!v.length)return;let p=v.findIndex(x=>x.i===curIdx);playIdx(v[(p+1)%v.length].i);};
+document.getElementById('stopBtn').onclick=()=>{stopGen();stopAudio();document.getElementById('mainPlay').textContent='▶';document.getElementById('st').textContent='STOP';document.getElementById('now').textContent='GATI';};
+document.getElementById('detailsBtn').onclick=()=>{if(curIdx>=0)alert(tracks[curIdx].name+'\n'+tracks[curIdx].desc+'\n'+tracks[curIdx].genre);};
+document.getElementById('listenBtn').onclick=()=>{if(curIdx>=0)playIdx(curIdx);else playIdx(0);};
+audio.addEventListener('playing',()=>{document.getElementById('st').textContent='LIVE';document.getElementById('fill').style.width='100%';});
+audio.addEventListener('timeupdate',()=>{const s=Math.floor(audio.currentTime||0);document.getElementById('t0').textContent=Math.floor(s/60)+':'+String(s%60).padStart(2,'0');});
+audio.addEventListener('error',()=>{if(curIdx>=0)document.getElementById('st').textContent='Nuk u hap - provo tjetrën';});
+function render(){const tabs=document.getElementById('tabs');tabs.innerHTML='';GENRES.forEach(g=>{const b=document.createElement('button');b.textContent=g;b.className=filter===g?'active':'';b.onclick=()=>{filter=g;render();};tabs.appendChild(b);});
+ const el=document.getElementById('listEl');el.innerHTML='';visible().forEach((x,idx)=>{const s=x.t;const d=document.createElement('div');d.className='item'+(x.i===curIdx?' active':'');d.innerHTML='<span class="n">'+String(idx+1).padStart(2,'0')+'</span><div class="info"><b>'+s.name+'</b><span>'+s.desc+'</span></div><span class="tag">'+s.genre+'</span><button class="play">▶</button>';d.onclick=()=>playIdx(x.i);el.appendChild(d);});}
+render();
+</script></body></html>
